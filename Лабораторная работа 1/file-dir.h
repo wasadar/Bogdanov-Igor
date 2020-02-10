@@ -40,43 +40,30 @@ public:
  
 class dir {
 private:
-	file* files;
-	int last_ind;
+	file files[100];
+	int next_ind = 0;
 public:
 	void add_file(file f) {
-		if (files == nullptr) {
-			files = (file*)malloc(sizeof(file) * 1);
-			files[0] = f;
-			last_ind = 0;
-		}
-		else if (files != nullptr) {
-			files = (file*)realloc(files, sizeof(files) + sizeof(file));
-			last_ind++;
-			files[last_ind] = f;
-		}
+		files[next_ind] = f;
+		next_ind++;
 	}
 	void del_file(int index) {
-		if (last_ind != 0) {
-			int ind = index;
-			while (ind != last_ind) {
-				files[ind] = files[ind + 1];
-				ind++;
-			}
-			files = (file*)realloc(files, sizeof(files) - sizeof(file));
-			last_ind--;
+		for (int i = index; i < next_ind; i++) {
+			files[i] = files[i + 1];
 		}
-		else {
-			free(files);
-		}
+		next_ind--;
 	}
 	void get_file_to_screen(int index) {
-		std::cout << files[index].get_full_name << " " << files[index].get_size;
+		std::cout << files[index].get_full_name() << " " << files[index].get_size() << "\n";
 	}
 	void print_all() {
-		for (int i = 0; i <= last_ind; i++) {
+		for (int i = 0; i < next_ind; i++) {
 			std::cout << i << " ";
 			get_file_to_screen(i);
 		}
+	}
+	dir() {
+
 	}
 }; 
  
