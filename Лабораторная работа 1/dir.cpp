@@ -1,26 +1,6 @@
-#include "file-dir.h"
- 
-int file::get_x() {
-	return x_version;
-}
-int file::get_size() {
-	return size;
-}
-int file::get_index() {
-	return index;
-}
-void file::change_x(int x) {
-	x_version = x;
-}
-void file::change_size(int sz) {
-	size = sz;
-}
+#include "dir.h"
 
-void file::change_index(int in) {
-	index = in;
-}
-
-void dir::add_file(file f) {
+void dir::add_file(const file &f) {
 	if (next_ind == 0) {
 		files = (file*)malloc(sizeof(file));
 		files[next_ind] = f;
@@ -40,11 +20,12 @@ void dir::add_file(file f) {
 		}
 		free(copy);
 		files[next_ind] = f;
-		files[next_ind].change_index(new_ind+1);
+		files[next_ind].change_index(new_ind);
 		next_ind++;
+		new_ind++;
 	}
 }
-void dir::del_file(int index) {
+void dir::del_file(const int &index) {
 	if (next_ind == 1) {
 		free(files);
 	}
@@ -66,12 +47,14 @@ void dir::del_file(int index) {
 	}
 }
 void dir::del_all() {
-	free(files);
+	for (int i = 0; i < next_ind; i++) {
+		del_file(0);
+	}
 }
-void dir::get_file_to_screen(int index) {
+void dir::get_file_to_screen(const int &index) const {
 	std::cout << files[index].get_index() << " " << files[index].get_size() << " x" << files[index].get_x() << "\n";
 }
-void dir::print_all() {
+void dir::print_all() const {
 	for (int i = 0; i < next_ind; i++) {
 		std::cout << i + 1 << " ";
 		get_file_to_screen(i);
