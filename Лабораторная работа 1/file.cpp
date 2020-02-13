@@ -12,10 +12,9 @@ int file::get_index() const {
 void file::change_x(const int &x) {
 	x_version = x;
 }
-void file::change_size(const int &sz) {
+void file::change_size(const int& sz) {
 	size = sz;
 }
-
 void file::change_index(const int &in) {
 	index = in;
 }

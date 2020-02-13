@@ -28,6 +28,7 @@ void dir::add_file(const file &f) {
 void dir::del_file(const int &index) {
 	if (next_ind == 1) {
 		free(files);
+		next_ind--;
 	}
 	else {
 		copy = (file*)malloc(sizeof(file) * (next_ind - 1));
