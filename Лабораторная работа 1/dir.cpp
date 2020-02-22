@@ -26,11 +26,11 @@ void dir::add_file(const file &f) {
 	}
 }
 void dir::del_file(const int &index) {
-	if (next_ind == 1) {
+	if (next_ind == 1 && index == 0) {
 		free(files);
 		next_ind--;
 	}
-	else {
+	else if (index >= 0) {
 		copy = (file*)malloc(sizeof(file) * (next_ind - 1));
 		for (int i = 0; i < index; i++) {
 			copy[i] = files[i];
@@ -45,6 +45,13 @@ void dir::del_file(const int &index) {
 		}
 		free(copy);
 		next_ind--;
+	}
+}
+file dir::get_file_by_index(const int& index) const {
+	for (int i = 0; i < next_ind; i++) {
+		if (files[i].get_index() == index) {
+			return files[i];
+		}
 	}
 }
 void dir::del_all() {

@@ -23,6 +23,7 @@ void menu() {
         std::cout << "2 - удалить элемент из списка." << "\n";
         std::cout << "3 - показать все элементы списка." << "\n";
         std::cout << "4 - завершить работу программы." << "\n";
+        std::cout << "5 - получить файл по индексу." << "\n";
         std::cin >> n;
         if (n == 1) {
             temp_file.change_size(123);
@@ -38,6 +39,12 @@ void menu() {
         }
         else if (n == 3) {
             directory.print_all();
+        }
+        else if (n == 5) {
+            std::cout << "¬ведите индекс нового элемента. ";
+            std::cin >> temp_i;
+            temp_i;
+            directory.get_file_by_index(temp_i);
         }
     }
     directory.del_all();

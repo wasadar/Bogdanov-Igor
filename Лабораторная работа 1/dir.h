@@ -11,6 +11,7 @@ public:
 	void add_file(const file &f);
 	void del_file(const int &index);
 	void del_all();
+	file get_file_by_index(const int& index) const;
 	void get_file_to_screen(const int &index) const;
 	void print_all() const;
 };

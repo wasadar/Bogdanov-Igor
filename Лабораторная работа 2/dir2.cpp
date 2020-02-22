@@ -12,13 +12,11 @@ void dir::add_file(const file &f) {
 		copy = (file*)malloc(sizeof(file) * (next_ind + 1));
 		for (int i = 0; i < next_ind; i++) {
 			copy[i] = files[i];
-			files[i].~file();
 		}
 		free(files);
 		files = (file*)malloc(sizeof(file) * (next_ind + 1));
 		for (int i = 0; i < next_ind; i++) {
 			files[i] = copy[i];
-			copy[i].~file();
 		}
 		free(copy);
 		files[next_ind] = f;
@@ -29,7 +27,6 @@ void dir::add_file(const file &f) {
 }
 void dir::del_file(const int &index) {
 	if (next_ind == 1) {
-		files[0].~file();
 		free(files);
 		next_ind--;
 	}
@@ -41,23 +38,18 @@ void dir::del_file(const int &index) {
 		for (int i = index + 1; i < next_ind; i++) {
 			copy[i - 1] = files[i];
 		}
-		for (int i = 0; i < next_ind; i++) {
-			files[i].~file();
-		}
 		free(files);
 		files = (file*)malloc(sizeof(file) * (next_ind - 1));
 		for (int i = 0; i < next_ind; i++) {
 			files[i] = copy[i];
-			copy[i].~file();
 		}
 		free(copy);
 		next_ind--;
 	}
 }
 void dir::del_all() {
-	for (int i = 0; i < next_ind; i++) {
-		del_file(0);
-	}
+	free(files);
+	next_ind = 0;
 }
 void dir::get_file_to_screen(const int &index) const {
 	int i = 0;
@@ -81,4 +73,11 @@ int dir::count_system() const {
 		}
 	}
 	return count;
+}
+file dir::get_file_by_index(const int& index) const {
+	for (int i = 0; i < next_ind; i++) {
+		if (files[i].get_index() == index) {
+			return files[i];
+		}
+	}
 }

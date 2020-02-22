@@ -12,6 +12,7 @@ public:
 	void del_file(const int &index);
 	void del_all();
 	void get_file_to_screen(const int &index) const;
+	file get_file_by_index(const int& index) const;
 	void print_all() const;
 	int count_system() const;
 };
