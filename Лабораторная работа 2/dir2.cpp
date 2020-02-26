@@ -52,12 +52,7 @@ void dir::del_all() {
 	next_ind = 0;
 }
 void dir::get_file_to_screen(const int &index) const {
-	int i = 0;
-	while (files[index].get_name()[i] != '\0') {
-		std::cout << files[index].get_name()[i];
-		i++;
-	}
-	std::cout << " " << files[index].get_index() << " " << files[index].get_size() << " x" << files[index].get_x() << " " << files[index].get_hid() << " " << files[index].get_sys() << "\n";
+	std::cout << files[index].get_name() << " " << files[index].get_index() << " " << files[index].get_size() << " x" << files[index].get_x() << " " << files[index].get_hid() << " " << files[index].get_sys() << "\n";
 }
 void dir::print_all() const {
 	for (int i = 0; i < next_ind; i++) {

@@ -10,14 +10,14 @@ private:
 	int index;
 	bool is_system;
 	bool is_hidden;
-	char* name;
+	const char* name;
 public:
 	int get_x() const;
 	int get_size() const;
 	int get_index() const;
 	bool get_sys() const;
 	bool get_hid() const;
-	char* get_name() const;
+	const char* get_name() const;
 	void change_x(const int&);
 	void change_size(const int&);
 	void change_index(const int&);

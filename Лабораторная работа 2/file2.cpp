@@ -15,7 +15,7 @@ bool file::get_sys() const {
 bool file::get_hid() const {
 	return is_hidden;
 }
-char* file::get_name() const {
+const char* file::get_name() const {
 	return name;
 }
 void file::change_x(const int &x) {
@@ -33,10 +33,8 @@ void file::change_sys(const bool &sys) {
 void file::change_hid(const bool &hid) {
 	is_hidden = hid;
 }
-void file::change_name(const char *nm) {
-	free(name);
-	name = (char*)malloc(sizeof(char) * (strlen(nm) + 2));
-	strcpy(name, nm);
+void file::change_name(const char* nm) {
+	name = nm;
 }
 file::file() {
 	x_version = 32;
@@ -44,8 +42,7 @@ file::file() {
 	index = 0;
 	is_system = false;
 	is_hidden = false;
-	name = (char*)malloc(sizeof(char) * (strlen("file") + 2));
-	strcpy(name, "file");
+	name = "file";
 	std::cout << "Файл создан при помощи конструктора поумолчанию." << "\n";
 }
 file::file(const file &f) {
@@ -55,7 +52,8 @@ file::file(const file &f) {
 	is_system = f.get_sys();
 	is_hidden = f.get_hid();
 	name = (char*)malloc(sizeof(char) * (strlen(f.get_name()) + 2));
-	strcpy(name, f.get_name());
+	int i = 0;
+	name = f.get_name();
 }
 file::file(const int &ver, const int &sz, const int &ind, const bool &sys, const bool &hid, const char *nm) {
 	x_version = ver;
@@ -64,10 +62,10 @@ file::file(const int &ver, const int &sz, const int &ind, const bool &sys, const
 	is_system = sys;
 	is_hidden = hid;
 	name = (char*)malloc(sizeof(char) * (strlen(nm)+1));
-	strcpy(name, nm);
+	int i = 0;
+	name = nm;
 	std::cout << "Файл создан при помощи конструктора с аргументами." << "\n";
 }
 file::~file() {
-	free(name);
 	std::cout << "Файл уничтожен при помощи деструктора поумолчанию." << "\n";
 } 
