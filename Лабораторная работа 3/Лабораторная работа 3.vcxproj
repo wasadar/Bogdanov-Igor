@@ -147,7 +147,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dir.cpp" />
+    <ClCompile Include="file.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="tests.cpp" />
     <ClCompile Include="Лабораторная работа 3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dir.h" />
+    <ClInclude Include="file.h" />
+    <ClInclude Include="menu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

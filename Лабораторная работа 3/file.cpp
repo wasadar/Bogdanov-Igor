@@ -15,7 +15,7 @@ bool file::get_sys() const {
 bool file::get_hid() const {
 	return is_hidden;
 }
-const char* file::get_name() const {
+std::string file::get_name() const {
 	return name;
 }
 void file::change_x(const int &x) {
@@ -33,7 +33,7 @@ void file::change_sys(const bool &sys) {
 void file::change_hid(const bool &hid) {
 	is_hidden = hid;
 }
-void file::change_name(const char* nm) {
+void file::change_name(const std::string &nm) {
 	name = nm;
 }
 file::file() {
@@ -54,7 +54,7 @@ file::file(const file &f) {
 	int i = 0;
 	name = f.get_name();
 }
-file::file(const int &ver, const int &sz, const int &ind, const bool &sys, const bool &hid, const char *nm) {
+file::file(const int &ver, const int &sz, const int &ind, const bool &sys, const bool &hid, const std::string &nm) {
 	x_version = ver;
 	size = sz;
 	index = ind;
