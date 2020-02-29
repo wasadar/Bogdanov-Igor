@@ -1,4 +1,4 @@
-#include "menu2.h"
+#include "menu.h"
 
 void menu() {
     setlocale(LC_ALL, "Russian");

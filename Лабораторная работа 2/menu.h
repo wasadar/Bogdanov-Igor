@@ -1,4 +1,4 @@
 #pragma once
-#include "dir2.h"
+#include "dir.h"
 
 void menu();

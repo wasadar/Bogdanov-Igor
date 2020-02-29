@@ -1,4 +1,4 @@
-#include "dir2.h"
+#include "dir.h"
 
 void dir::add_file(const file &f) {
 	if (next_ind == 0) {

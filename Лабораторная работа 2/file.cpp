@@ -1,4 +1,4 @@
-#include "file2.h"
+#include "file.h"
  
 int file::get_x() const {
 	return x_version;
