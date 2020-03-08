@@ -11,7 +11,6 @@ public:
 	int get_x() const;
 	int get_size() const;
 	int get_index() const;
-	
 	void change_x(const int &x);
 	void change_size(const int &sz);
 	void change_index(const int &in);

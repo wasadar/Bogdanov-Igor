@@ -1,0 +1,7 @@
+﻿  file.cpp
+  dir.cpp
+  menu.cpp
+  tests.cpp
+  Создание кода...
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 1\dir.cpp(56): warning C4715: dir::get_file_by_index: значение возвращается не при всех путях выполнения
+  Лабораторная работа 1.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Tests 1\Лабораторная работа 1.exe

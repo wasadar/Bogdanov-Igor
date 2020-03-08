@@ -1,11 +1,16 @@
 ﻿// Лабораторная работа 3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
+#include "menu.h"
+#define _CRTDBG_MAP_ALLOC 
 
-#include <iostream>
-
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+    menu();
+	if (_CrtDumpMemoryLeaks()) {
+		std::cout << "Утечка памяти обнаружена." << "\n";
+	}
+	else {
+		std::cout << "Утечка памяти не обнаружена." << "\n";
+	}
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

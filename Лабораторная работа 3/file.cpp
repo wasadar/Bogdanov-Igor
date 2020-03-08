@@ -51,7 +51,6 @@ file::file(const file &f) {
 	index = f.get_index();
 	is_system = f.get_sys();
 	is_hidden = f.get_hid();
-	int i = 0;
 	name = f.get_name();
 }
 file::file(const int &ver, const int &sz, const int &ind, const bool &sys, const bool &hid, const std::string &nm) {
@@ -60,7 +59,6 @@ file::file(const int &ver, const int &sz, const int &ind, const bool &sys, const
 	index = ind;
 	is_system = sys;
 	is_hidden = hid;
-	int i = 0;
 	name = nm;
 	std::cout << "Файл создан при помощи конструктора с аргументами." << "\n";
 }

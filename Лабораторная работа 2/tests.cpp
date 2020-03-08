@@ -1,4 +1,5 @@
 #include "menu.h"
+#define _CRTDBG_MAP_ALLOC 
 
 int main() {
 	setlocale(LC_ALL, "Russian");
@@ -26,6 +27,12 @@ int main() {
 	}
 	else {
 		std::cout << "Проверка работы метода count_system и конструктора с аргументами провалена." << "\n";
+	}
+	if (_CrtDumpMemoryLeaks()) {
+		std::cout << "Утечка памяти обнаружена." << "\n";
+	}
+	else {
+		std::cout << "Утечка памяти не обнаружена." << "\n";
 	}
 	int t;
 	std::cin >> t;
