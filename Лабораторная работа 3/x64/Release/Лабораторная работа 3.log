@@ -1,0 +1,15 @@
+﻿  dir.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 3\dir.cpp(84,23): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 3\dir.cpp(86,31): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 3\dir.cpp(92,32): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 3\dir.cpp(98,32): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 3\dir.cpp(104,32): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 3\dir.cpp(110,32): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  file.cpp
+  menu.cpp
+  Лабораторная работа 3.cpp
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 165 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Лабораторная работа 3.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Release\Лабораторная работа 3.exe
