@@ -1,0 +1,14 @@
+﻿  dir.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\dir.cpp(114,33): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\dir.cpp(158,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\dir.cpp(158,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\dir.cpp(158,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\dir.cpp(166,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\dir.cpp(166,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\dir.cpp(166,18): warning C4129: ;: неизвестная escape-последовательность
+  file.cpp
+  menu.cpp
+  tests.cpp
+  Лабораторная работа 5.cpp
+tests.obj : error LNK2005: main уже определен в tests.obj
+C:\Users\User\Bogdanov-Igor\x64\Release\Лабораторная работа 5.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более

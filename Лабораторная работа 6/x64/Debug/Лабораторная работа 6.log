@@ -1,0 +1,18 @@
+﻿  dir.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(114,33): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(163,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(163,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(163,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(171,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(171,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(171,18): warning C4129: ;: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(348,33): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(403,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(403,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(403,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(411,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(411,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(411,18): warning C4129: ;: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(97): warning C4715: dir::get_file_by_index: значение возвращается не при всех путях выполнения
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 6\dir.cpp(331): warning C4715: sys_dir::get_file_by_index: значение возвращается не при всех путях выполнения
+  Лабораторная работа 6.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Debug\Лабораторная работа 6.exe
