@@ -1,1 +1,14 @@
-﻿  Лабораторная работа 7.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Debug\Лабораторная работа 7.exe
+﻿  dir.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 7\dir.cpp(147,33): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 7\dir.cpp(210,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 7\dir.cpp(210,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 7\dir.cpp(210,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 7\dir.cpp(218,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 7\dir.cpp(218,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 7\dir.cpp(218,18): warning C4129: ;: неизвестная escape-последовательность
+  file.cpp
+  menu.cpp
+  Лабораторная работа 7.cpp
+  Создание кода...
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 7\dir.cpp(124): warning C4715: dir::get_file_by_index: значение возвращается не при всех путях выполнения
+  Лабораторная работа 7.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Debug\Лабораторная работа 7.exe

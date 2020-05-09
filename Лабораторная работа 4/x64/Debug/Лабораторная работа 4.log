@@ -12,9 +12,5 @@ C:\Users\User\Bogdanov-Igor\Лабораторная работа 4\dir.cpp(156,
 C:\Users\User\Bogdanov-Igor\Лабораторная работа 4\dir.cpp(164,18): warning C4129: !: неизвестная escape-последовательность
 C:\Users\User\Bogdanov-Igor\Лабораторная работа 4\dir.cpp(164,18): warning C4129: .: неизвестная escape-последовательность
 C:\Users\User\Bogdanov-Igor\Лабораторная работа 4\dir.cpp(164,18): warning C4129: ;: неизвестная escape-последовательность
-  file.cpp
-  menu.cpp
-  Лабораторная работа 4.cpp
-  Создание кода...
 C:\Users\User\Bogdanov-Igor\Лабораторная работа 4\dir.cpp(97): warning C4715: dir::get_file_by_index: значение возвращается не при всех путях выполнения
   Лабораторная работа 4.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Debug\Лабораторная работа 4.exe

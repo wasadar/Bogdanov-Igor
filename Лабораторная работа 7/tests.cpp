@@ -1,7 +1,7 @@
 #include "menu.h"
 #define _CRTDBG_MAP_ALLOC 
 
-int main() { /** Тести. */
+int main() { 
 	setlocale(LC_ALL, "Russian");
 	int n;
 	x_version* x32 = new x_version;

@@ -1,2 +1,43 @@
-﻿  tests.cpp
-  Лабораторная работа 5.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Tests 5\Лабораторная работа 5.exe
+﻿  menu.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(56,26): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "and"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(56,26): error C3861: and: идентификатор не найден
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(56,38): error C2059: синтаксическая ошибка: )
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(57,51): error C2059: синтаксическая ошибка: ;
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(59,31): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "and"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(59,31): error C3861: and: идентификатор не найден
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(59,43): error C2059: синтаксическая ошибка: )
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(60,53): error C2059: синтаксическая ошибка: ;
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(62,13): error C2181: недопустимый else без парного if
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(62,31): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "and"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(62,31): error C3861: and: идентификатор не найден
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(62,43): error C2059: синтаксическая ошибка: )
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(63,48): error C2059: синтаксическая ошибка: ;
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(65,13): error C2059: синтаксическая ошибка: else
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(65,45): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(65,45): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(68,13): error C2059: синтаксическая ошибка: else
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(68,45): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(68,45): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(71,13): error C2059: синтаксическая ошибка: else
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(71,45): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(71,45): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(74,13): error C2059: синтаксическая ошибка: else
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(74,45): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(74,45): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(77,13): error C2059: синтаксическая ошибка: else
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(77,45): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(77,45): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(80,13): error C2059: синтаксическая ошибка: else
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(80,45): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(80,45): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(83,13): error C2059: синтаксическая ошибка: else
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(83,45): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(83,45): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(86,9): error C2059: синтаксическая ошибка: }
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(86,9): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(87,5): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(87,5): error C2059: синтаксическая ошибка: }
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(89,5): error C2059: синтаксическая ошибка: delete
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(90,5): error C2059: синтаксическая ошибка: delete
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(91,1): error C2059: синтаксическая ошибка: }
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 5\menu.cpp(91,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"

@@ -19,8 +19,8 @@
 
 int main()
 {
-	menu(); /** Функція меню. */
-	if (_CrtDumpMemoryLeaks()) { /** Перевірка на виток пам'яті.*/
+	menu(); 
+	if (_CrtDumpMemoryLeaks()) { 
 		std::cout << "Утечка памяти обнаружена." << "\n";
 	}
 	else {

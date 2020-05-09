@@ -10,12 +10,12 @@ void dir::add_file(const file &f) {
 	}
 	else {
 		copy = new file[next_ind];
-		for (int i = 0; i < next_ind; i++) {
+		for (size_t i = 0; i < next_ind; i++) {
 			copy[i] = files[i];
 		}
 		delete[] files;
 		files = new file[next_ind + 1];
-		for (int i = 0; i < next_ind; i++) {
+		for (size_t i = 0; i < next_ind; i++) {
 			files[i] = copy[i];
 		}
 		delete[] copy;
@@ -32,15 +32,15 @@ void dir::del_file(const int &index) {
 	}
 	else {
 		copy = new file[next_ind - 1];
-		for (int i = 0; i < index; i++) {
+		for (size_t i = 0; i < index; i++) {
 			copy[i] = files[i];
 		}
-		for (int i = index, j = index + 1; i < (next_ind - 1), j < next_ind; i++, j++) {
+		for (size_t i = index, j = index + 1; i < (next_ind - 1), j < next_ind; i++, j++) {
 			copy[i] = files[j];
 		}
 		delete[] files;
 		files = new file[next_ind - 1];
-		for (int i = 0; i < next_ind - 1; i++) {
+		for (size_t i = 0; i < next_ind - 1; i++) {
 			files[i] = copy[i];
 		}
 		delete[] copy;
@@ -72,7 +72,7 @@ std::string dir::get_file_to_str(const int &index) const {
 	return s.str();
 }
 void dir::print_all() const {
-	for (int i = 0; i < next_ind; i++) {
+	for (size_t i = 0; i < next_ind; i++) {
 		std::cout << i + 1 << " ";
 		std::string str;
 		str = get_file_to_str(i);
@@ -81,7 +81,7 @@ void dir::print_all() const {
 }
 int dir::count_system() const {
 	auto count = 0;
-	for (int i = 0; i < next_ind; i++) {
+	for (size_t i = 0; i < next_ind; i++) {
 		if (files[i].get_hid() && files[i].get_sys()) {
 			count++;
 		}
@@ -89,7 +89,7 @@ int dir::count_system() const {
 	return count;
 }
 file dir::get_file_by_index(const int& index) const {
-	for (int i = 0; i < next_ind; i++) {
+	for (size_t i = 0; i < next_ind; i++) {
 		if (files[i].get_index() == index) {
 			return files[i];
 		}
@@ -150,7 +150,7 @@ void dir::print_to_file(const std::string& name) const {
 	std::ofstream f;
 	f.open(name);
 	std::string str;
-	for (int i = 0; i < next_ind; i++) {
+	for (size_t i = 0; i < next_ind; i++) {
 		str = get_file_to_str(i);
 		f << str;
 		if (i != next_ind - 1) {
@@ -183,7 +183,7 @@ bool dir::check_str(const std::string& str) const {
 	return true;
 }
 void dir::print_all_with_2_or_more_words() const {
-	for (int i = 0; i < next_ind; i++) {
+	for (size_t i = 0; i < next_ind; i++) {
 		std::string str;
 		str = get_file_to_str(i);
 		std::regex re("\".+ .+\"");
@@ -197,7 +197,7 @@ void dir::sort_files(bool (*f)(file&, file&)) {
 	file temp;
 	do {
 		check = false;
-		for (int i = 0; i < next_ind - 1; i++) {
+		for (size_t i = 0; i < next_ind - 1; i++) {
 			if (f(files[i], files[i + 1])) {
 				temp = files[i];
 				files[i] = files[i + 1];
@@ -232,4 +232,30 @@ bool sort_opt(file& first, file& second) {
 }
 bool sort_name(file& first, file& second) {
 	return (first.get_name() > second.get_name());
+}
+bool sort_version_2(file& first, file& second) {
+	return (first.get_x() > second.get_x());
+}
+bool sort_size_2(file& first, file& second) {
+	return (first.get_size() > second.get_size());
+}
+bool sort_ind_2(file& first, file& second) {
+	return (first.get_index() < second.get_index());
+}
+bool sort_opt_2(file& first, file& second) {
+	if (((second.get_sys() && second.get_hid()) == true) && ((first.get_sys() && first.get_hid()) != true)) {
+		return false;
+	}
+	else if (((second.get_sys() == false) && (second.get_hid() == true)) && (first.get_hid() != true)) {
+		return false;
+	}
+	else if (((second.get_hid() == false) && (first.get_hid() == false)) && ((second.get_sys() == true) && (first.get_sys() != true))) {
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+bool sort_name_2(file& first, file& second) {
+	return (first.get_name() < second.get_name());
 }

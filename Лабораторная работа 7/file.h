@@ -25,7 +25,7 @@ public:
 	void change_sys(const bool&);
 	void change_hid(const bool&);
 };
-class file { /** Абстрактний клас. */
+class file { 
 private:
 	x_version* x;
 	size_t_t size;
@@ -52,7 +52,7 @@ public:
 	file(x_version*, const size_t_t&, const size_t_t&, const bool&, const bool&, const std::string&);
 	~file();
 };
-class executable_file final : public file { /** Клас нащадок 1.*/
+class executable_file final : public file { 
 private: 
 	size_t_t runningtime;
 public:
@@ -64,7 +64,7 @@ public:
 	~executable_file();
 	virtual std::string get_info() const final;
 };
-class non_executable_file final : public file { /** Клас нащадок 2.*/
+class non_executable_file final : public file {
 private:
 	bool is_text;
 public:

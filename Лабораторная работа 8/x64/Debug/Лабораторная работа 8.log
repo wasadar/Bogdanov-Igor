@@ -1,0 +1,13 @@
+﻿  dir.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 8\dir.cpp(145,33): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 8\dir.cpp(201,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 8\dir.cpp(201,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 8\dir.cpp(201,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 8\dir.cpp(209,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 8\dir.cpp(209,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 8\dir.cpp(209,18): warning C4129: ;: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 8\dir.cpp(295,14): warning C4267: аргумент: преобразование из "size_t" в "const int"; возможна потеря данных
+  Лабораторная работа 8.cpp
+  Создание кода...
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 8\dir.cpp(119): warning C4715: dir::get_file_by_index: значение возвращается не при всех путях выполнения
+  Лабораторная работа 8.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Debug\Лабораторная работа 8.exe

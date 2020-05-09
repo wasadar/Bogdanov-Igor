@@ -1,6 +1,4 @@
-"Sys file" 2 123 32 1 1 0
-"Qwerty" 3 521 64 1 0 0
-"Hello friend" 4 289 64 0 1 0
-"Water" 5 10000 32 0 0 0
-"Test" 6 2 32 1 0 0
-"Test" 7 2 32 1 0 1
+"Sys file" 2 123 32 1 1 
+"Qwerty" 3 521 64 1 0 
+"Hello friend" 4 289 64 0 1 
+"Water" 5 10000 32 0 0 

@@ -29,3 +29,8 @@ bool sort_size(file&, file&);
 bool sort_ind(file&, file&);
 bool sort_opt(file&, file&);
 bool sort_name(file&, file&);
+bool sort_version_2(file&, file&);
+bool sort_size_2(file&, file&);
+bool sort_ind_2(file&, file&);
+bool sort_opt_2(file&, file&);
+bool sort_name_2(file&, file&);

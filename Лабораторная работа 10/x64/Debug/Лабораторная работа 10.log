@@ -1,0 +1,8 @@
+﻿  funcclass.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 10\funcclass.cpp(188,20): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  Лабораторная работа 10.cpp
+  Создание кода...
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 10\funcclass.cpp(15): warning C4715: funcclass::find_ind<float>: значение возвращается не при всех путях выполнения
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 10\funcclass.cpp(15): warning C4715: funcclass::find_ind<int>: значение возвращается не при всех путях выполнения
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 10\funcclass.cpp(15): warning C4715: funcclass::find_ind<drob>: значение возвращается не при всех путях выполнения
+  Лабораторная работа 10.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Debug\Лабораторная работа 10.exe

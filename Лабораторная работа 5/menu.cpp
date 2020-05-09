@@ -10,6 +10,7 @@ void menu() {
     x64->change_ver(64);
     directory.read_from_file("data.txt",x32,x64);
     int s;
+    int m;
     while (n != 4) {
         std::cout << "Выберите желаемую опцию:" << "\n";
         std::cout << "1 - добавить элемент в список." << "\n";
@@ -48,23 +49,39 @@ void menu() {
             directory.print_all_with_2_or_more_words();
         }
         else if (n == 9) {
+            std::cout << "Выберите порядок сортировки. 1 - по по алфавиту и от большего к меньшему, 2 - наоборот. " << "\n";
+            std::cin >> m;
             std::cout << "Ввведите номер признака по которому хотите отсортировать массив: 1 - x, 2 - size, 3 - index, 4 - opt, 5 - name. " << "\n";
             std::cin >> s;
-            if (s == 1) {
+            if ((s == 1) and (m == 1)) {
                 directory.sort_files(sort_version);
             }
-            else if (s == 2) {
+            else if ((s == 1) and (m == 2)) {
+                directory.sort_files(sort_version_2);
+            }
+            else if ((s == 2) and (m == 1)) {
                 directory.sort_files(sort_size);
             }
-            else if (s == 3) {
+            else if ((s == 2) and (m == 2)) {
+                directory.sort_files(sort_size_2);
+            }
+            else if ((s == 3) and (m == 1)) {
                 directory.sort_files(sort_ind);
             }
-            else if (s == 4) {
-                s = 0;
+            else if ((s == 3) and (m == 2)) {
+                directory.sort_files(sort_ind_2);
+            }
+            else if ((s == 4) and (m == 1)) {
                 directory.sort_files(sort_opt);
             }
-            else if (s == 5) {
+            else if ((s == 4) and (m == 2)) {
+                directory.sort_files(sort_opt_2);
+            }
+            else if ((s == 5) and (m == 1)) {
                 directory.sort_files(sort_name);
+            }
+            else if ((s == 5) and (m == 2)) {
+                directory.sort_files(sort_name_2);
             }
         }
     }
