@@ -1,0 +1,35 @@
+﻿  menu.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\algorithm(87,1): error C2679: бинарный "!=": не найден оператор, принимающий правый операнд типа "const _Iter" (или приемлемое преобразование отсутствует)
+          with
+          [
+              _Iter=My_lst1_iter<file>
+          ]
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 15\file.h(55,14): message : может быть "bool operator !=(const file &,const file &)" [найдено при поиске с зависимостью от аргументов]
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 15\file.h(70,14): message : или       "bool operator !=(const executable_file &,const executable_file &)" [найдено при поиске с зависимостью от аргументов]
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 15\file.h(85,14): message : или       "bool operator !=(const non_executable_file &,const non_executable_file &)" [найдено при поиске с зависимостью от аргументов]
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 15\Mycont.h(39,14): message : или       "bool operator !=(My_lst1_iter<t> &,My_lst1_iter<t> &)" [найдено при поиске с зависимостью от аргументов]
+          with
+          [
+              t=file
+          ]
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 15\Mycont.h(92,28): message : или       "bool operator !=<t>(My_lst1_iter<t> &,My_lst1_iter<t> &)"
+          with
+          [
+              t=file
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\algorithm(87,1): message : при попытке сопоставить список аргументов "(_Iter, const _Iter)"
+          with
+          [
+              _Iter=My_lst1_iter<file>
+          ]
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 15\menu.cpp(992): message : выполняется компиляция ссылки на экземпляр шаблон функции "_Fn (__cdecl *std::for_each<My_lst1_iter<t>,void(__cdecl *)(const file &)>(_InIt,_InIt,_Fn))(const file &)"
+          with
+          [
+              _Fn=void (__cdecl *)(const file &),
+              t=file,
+              _InIt=My_lst1_iter<file>
+          ]
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 15\menu.cpp(371): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "std::list<file,std::allocator<file>>"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\algorithm(87,20): error C2088: !=: недопустимо для class
+  Mycont.cpp
+  Создание кода...

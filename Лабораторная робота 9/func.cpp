@@ -108,12 +108,10 @@ void get_data_to_screen(int* data) {
 } 
 void menu() {
 	std::string str;
-	std::stringstream temp;
 	int n = 0;
 	int** data = 0;
 	int i;
 	int u;
-	bool m;
 	std::string nmout;
 	std::string nmin;
 	while (true) {

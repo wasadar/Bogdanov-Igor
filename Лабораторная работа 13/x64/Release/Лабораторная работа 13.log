@@ -1,0 +1,21 @@
+﻿  dir.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(145,33): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(201,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(201,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(201,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(209,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(209,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(209,18): warning C4129: ;: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(295,14): warning C4267: аргумент: преобразование из "size_t" в "const int"; возможна потеря данных
+  file.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(206,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(206,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(206,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(214,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(214,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(214,18): warning C4129: ;: неизвестная escape-последовательность
+  menu.cpp
+  tests.cpp
+  Лабораторная работа 13.cpp
+tests.obj : error LNK2005: main уже определен в tests.obj
+C:\Users\User\Bogdanov-Igor\x64\Release\Лабораторная работа 13.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более

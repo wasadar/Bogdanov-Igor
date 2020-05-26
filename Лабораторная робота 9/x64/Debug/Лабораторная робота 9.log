@@ -1,7 +1,4 @@
 ﻿  func.cpp
-C:\Users\User\Bogdanov-Igor\Лабораторная робота 9\func.cpp(116,7): warning C4101: m: неиспользованная локальная переменная
-C:\Users\User\Bogdanov-Igor\Лабораторная робота 9\func.cpp(135,39): warning C4101: e: неиспользованная локальная переменная
-C:\Users\User\Bogdanov-Igor\Лабораторная робота 9\func.cpp(139,35): warning C4101: e: неиспользованная локальная переменная
-  Лабораторная робота 9.cpp
-  Создание кода...
+C:\Users\User\Bogdanov-Igor\Лабораторная робота 9\func.cpp(133,39): warning C4101: e: неиспользованная локальная переменная
+C:\Users\User\Bogdanov-Igor\Лабораторная робота 9\func.cpp(137,35): warning C4101: e: неиспользованная локальная переменная
   Лабораторная робота 9.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Debug\Лабораторная робота 9.exe

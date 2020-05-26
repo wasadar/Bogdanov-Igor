@@ -1,0 +1,20 @@
+﻿  dir.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(201,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(201,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(201,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(209,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(209,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(209,18): warning C4129: ;: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(315,23): warning C4806: ==: небезопасная операция: значение типа "bool", приведенное к типу "int", не может равняться данной константе
+  file.cpp
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(206,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(206,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(206,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(214,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(214,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\file.cpp(214,18): warning C4129: ;: неизвестная escape-последовательность
+  menu.cpp
+  tests.cpp
+  Создание кода...
+C:\Users\User\Bogdanov-Igor\Лабораторная работа 13\dir.cpp(119): warning C4715: dir::get_file_by_index: значение возвращается не при всех путях выполнения
+  Лабораторная работа 13.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Tests 13\Лабораторная работа 13.exe
