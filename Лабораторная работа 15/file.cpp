@@ -110,12 +110,12 @@ void non_executable_file::change_text(const bool& text) {
 }
 std::string executable_file::get_info() const {
 	std::stringstream s;
-	s << runningtime;
+	s << type_of_file << " " << "\"" << name << "\" " << index << " " << size << " " << x << " " << opt.get_hid() << " " << opt.get_sys() << " " << runningtime;
 	return s.str();
 }
 std::string non_executable_file::get_info() const {
 	std::stringstream s;
-	s << is_text;
+	s << type_of_file << " " << "\"" << name << "\" " << index << " " << size << " " << x << " " << opt.get_hid() << " " << opt.get_sys() << " " << is_text;
 	return s.str();
 }
 bool operator==(const file& f1, const file& f2) {
@@ -222,13 +222,13 @@ bool check_str(const std::string& str){
 	return true;
 }
 std::ostream& operator<<(std::ostream& os, const file& f) {
-	return os << f.type_of_file << " " << "\"" << f.get_name() << "\" " << f.get_index() << " " << f.get_size() << " " << f.get_x() << " " << f.get_hid() << " " << f.get_sys() << " " << f.get_info();
+	return os << f.get_info();
 }
 std::ostream& operator<<(std::ostream& os, const executable_file& f) {
-	return os << f.type_of_file << " " << "\"" << f.get_name() << "\" " << f.get_index() << " " << f.get_size() << " " << f.get_x() << " " << f.get_hid() << " " << f.get_sys() << " " << f.get_time();
+	return os << f.get_info();
 }
 std::ostream& operator<<(std::ostream& os, const non_executable_file& f) {
-	return os << f.type_of_file << " " << "\"" << f.get_name() << "\" " << f.get_index() << " " << f.get_size() << " " << f.get_x() << " " << f.get_hid() << " " << f.get_sys() << " " << f.get_text();
+	return os << f.get_info();
 }
 std::istream& operator>>(std::istream& is, executable_file& f) {
 	std::string name;
@@ -426,7 +426,9 @@ non_executable_file& non_executable_file::operator=(const non_executable_file& f
 	return *this;
 }
 std::string file::get_info() const {
-	return "";
+	std::stringstream s;
+	s << type_of_file << " " << "\"" << name << "\" " << index << " " << size << " " << x << " " << opt.get_hid() << " " << opt.get_sys();
+	return s.str();
 }
 bool operator>(const file& f1, const file& f2) {
 	return f1.get_name() < f2.get_name();

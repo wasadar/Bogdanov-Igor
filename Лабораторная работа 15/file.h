@@ -10,7 +10,6 @@
 #include <list>
 #include <set>
 #include <map>
-#include <algorithm>
 
 typedef size_t size_t_t;
 
@@ -64,7 +63,7 @@ public:
 	executable_file(const executable_file&);
 	executable_file(const size_t_t&, const size_t_t&, const size_t_t&, const bool&, const bool&, const std::string&, const size_t_t&);
 	~executable_file();
-	virtual std::string get_info() const final;
+	virtual std::string get_info() const override;
 	executable_file& operator=(const executable_file& f);
 	friend bool operator==(const executable_file& f1, const executable_file& f2);
 	friend bool operator!=(const executable_file& f1, const executable_file& f2);
@@ -79,7 +78,7 @@ public:
 	non_executable_file(const non_executable_file&);
 	non_executable_file(const size_t_t&, const size_t_t&, const size_t_t&, const bool&, const bool&, const std::string&, const  bool&);
 	~non_executable_file();
-	virtual std::string get_info() const final;
+	virtual std::string get_info() const override;
 	non_executable_file& operator=(const non_executable_file& f);
 	friend bool operator==(const non_executable_file& f1, const non_executable_file& f2);
 	friend bool operator!=(const non_executable_file& f1, const non_executable_file& f2);
