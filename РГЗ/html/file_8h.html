@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>РГЗ: Файл file.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">РГЗ
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл file.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;regex&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+</div>
+<p><a href="file_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptions.html">options</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfile.html">file</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexecutable__file.html">executable_file</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnon__executable__file.html">non_executable_file</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:af08ec37a8c99d747fb60fa15bc28678b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#af08ec37a8c99d747fb60fa15bc28678b">_CRT_SECURE_NO_WARNINGS</a></td></tr>
+<tr class="separator:af08ec37a8c99d747fb60fa15bc28678b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ab80423ed871d7d0711b4ede6ff6fe08f"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a></td></tr>
+<tr class="separator:ab80423ed871d7d0711b4ede6ff6fe08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aa0269ee2fe1365d17257a7f753336533"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#aa0269ee2fe1365d17257a7f753336533">check_str</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:aa0269ee2fe1365d17257a7f753336533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47cc16b23362174f160229d606eb11f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a47cc16b23362174f160229d606eb11f4">operator==</a> (const <a class="el" href="classfile.html">file</a> &amp;f1, const <a class="el" href="classfile.html">file</a> &amp;f2)</td></tr>
+<tr class="separator:a47cc16b23362174f160229d606eb11f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327d0e1848a2a42ec460ee9ea6c8f4bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a327d0e1848a2a42ec460ee9ea6c8f4bf">operator!=</a> (const <a class="el" href="classfile.html">file</a> &amp;f1, const <a class="el" href="classfile.html">file</a> &amp;f2)</td></tr>
+<tr class="separator:a327d0e1848a2a42ec460ee9ea6c8f4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8882bd5a1e7cc375705628602198927f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a8882bd5a1e7cc375705628602198927f">operator==</a> (const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;f1, const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;f2)</td></tr>
+<tr class="separator:a8882bd5a1e7cc375705628602198927f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7308b3d394ee5ed7901b21d61ab119a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a7308b3d394ee5ed7901b21d61ab119a8">operator!=</a> (const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;f1, const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;f2)</td></tr>
+<tr class="separator:a7308b3d394ee5ed7901b21d61ab119a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5546a9165866538031cbed7e75f28413"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a5546a9165866538031cbed7e75f28413">operator==</a> (const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;f1, const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;f2)</td></tr>
+<tr class="separator:a5546a9165866538031cbed7e75f28413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dec9aad82889ea8a4589b00085daecd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a3dec9aad82889ea8a4589b00085daecd">operator!=</a> (const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;f1, const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;f2)</td></tr>
+<tr class="separator:a3dec9aad82889ea8a4589b00085daecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf96f79f9d8f8b4c1e05546d5d323dae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#aaf96f79f9d8f8b4c1e05546d5d323dae">operator&gt;</a> (const <a class="el" href="classfile.html">file</a> &amp;f1, const <a class="el" href="classfile.html">file</a> &amp;f2)</td></tr>
+<tr class="separator:aaf96f79f9d8f8b4c1e05546d5d323dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7fbc12993728ef33bb89210830603ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#af7fbc12993728ef33bb89210830603ee">operator&lt;</a> (const <a class="el" href="classfile.html">file</a> &amp;f1, const <a class="el" href="classfile.html">file</a> &amp;f2)</td></tr>
+<tr class="separator:af7fbc12993728ef33bb89210830603ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb32152f39dfe798d196ae8b971b0f6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#adb32152f39dfe798d196ae8b971b0f6c">operator&gt;</a> (const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;f1, const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;f2)</td></tr>
+<tr class="separator:adb32152f39dfe798d196ae8b971b0f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb90f75833d917c126a7e70e54ea8c92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#acb90f75833d917c126a7e70e54ea8c92">operator&lt;</a> (const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;f1, const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;f2)</td></tr>
+<tr class="separator:acb90f75833d917c126a7e70e54ea8c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8155a8bfb59ce97abc07c9242c5b4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#aaa8155a8bfb59ce97abc07c9242c5b4b">operator&gt;</a> (const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;f1, const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;f2)</td></tr>
+<tr class="separator:aaa8155a8bfb59ce97abc07c9242c5b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1d396da78a7f919a715c8adf3792a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a7b1d396da78a7f919a715c8adf3792a9">operator&lt;</a> (const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;f1, const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;f2)</td></tr>
+<tr class="separator:a7b1d396da78a7f919a715c8adf3792a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcfa2b58c11770eac85d7420983d898"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a4bcfa2b58c11770eac85d7420983d898">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;f)</td></tr>
+<tr class="separator:a4bcfa2b58c11770eac85d7420983d898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30ad401e962fc117d4ff31b99a6c90a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#ae30ad401e962fc117d4ff31b99a6c90a">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;f)</td></tr>
+<tr class="separator:ae30ad401e962fc117d4ff31b99a6c90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19700310134914b1718909dc25750e50"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a19700310134914b1718909dc25750e50">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="classexecutable__file.html">executable_file</a> &amp;f)</td></tr>
+<tr class="separator:a19700310134914b1718909dc25750e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86ebd1b43e3d481c00b3f00802378f0"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#af86ebd1b43e3d481c00b3f00802378f0">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;f)</td></tr>
+<tr class="separator:af86ebd1b43e3d481c00b3f00802378f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57feeb953d683a3e3f791d03f7003a8a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_8h.html#a57feeb953d683a3e3f791d03f7003a8a">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classfile.html">file</a> &amp;f)</td></tr>
+<tr class="separator:a57feeb953d683a3e3f791d03f7003a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="af08ec37a8c99d747fb60fa15bc28678b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08ec37a8c99d747fb60fa15bc28678b">&#9670;&nbsp;</a></span>_CRT_SECURE_NO_WARNINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _CRT_SECURE_NO_WARNINGS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Типы</h2>
+<a id="ab80423ed871d7d0711b4ede6ff6fe08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab80423ed871d7d0711b4ede6ff6fe08f">&#9670;&nbsp;</a></span>size_t_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef size_t <a class="el" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="aa0269ee2fe1365d17257a7f753336533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0269ee2fe1365d17257a7f753336533">&#9670;&nbsp;</a></span>check_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool check_str </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7308b3d394ee5ed7901b21d61ab119a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7308b3d394ee5ed7901b21d61ab119a8">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a327d0e1848a2a42ec460ee9ea6c8f4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327d0e1848a2a42ec460ee9ea6c8f4bf">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfile.html">file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfile.html">file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3dec9aad82889ea8a4589b00085daecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dec9aad82889ea8a4589b00085daecd">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb90f75833d917c126a7e70e54ea8c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb90f75833d917c126a7e70e54ea8c92">&#9670;&nbsp;</a></span>operator&lt;() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7fbc12993728ef33bb89210830603ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7fbc12993728ef33bb89210830603ee">&#9670;&nbsp;</a></span>operator&lt;() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfile.html">file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfile.html">file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b1d396da78a7f919a715c8adf3792a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1d396da78a7f919a715c8adf3792a9">&#9670;&nbsp;</a></span>operator&lt;() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bcfa2b58c11770eac85d7420983d898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bcfa2b58c11770eac85d7420983d898">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57feeb953d683a3e3f791d03f7003a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57feeb953d683a3e3f791d03f7003a8a">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfile.html">file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae30ad401e962fc117d4ff31b99a6c90a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae30ad401e962fc117d4ff31b99a6c90a">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8882bd5a1e7cc375705628602198927f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8882bd5a1e7cc375705628602198927f">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47cc16b23362174f160229d606eb11f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47cc16b23362174f160229d606eb11f4">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfile.html">file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfile.html">file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5546a9165866538031cbed7e75f28413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5546a9165866538031cbed7e75f28413">&#9670;&nbsp;</a></span>operator==() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb32152f39dfe798d196ae8b971b0f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb32152f39dfe798d196ae8b971b0f6c">&#9670;&nbsp;</a></span>operator&gt;() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classexecutable__file.html">executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf96f79f9d8f8b4c1e05546d5d323dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf96f79f9d8f8b4c1e05546d5d323dae">&#9670;&nbsp;</a></span>operator&gt;() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfile.html">file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfile.html">file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa8155a8bfb59ce97abc07c9242c5b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa8155a8bfb59ce97abc07c9242c5b4b">&#9670;&nbsp;</a></span>operator&gt;() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19700310134914b1718909dc25750e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19700310134914b1718909dc25750e50">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classexecutable__file.html">executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af86ebd1b43e3d481c00b3f00802378f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af86ebd1b43e3d481c00b3f00802378f0">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnon__executable__file.html">non_executable_file</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

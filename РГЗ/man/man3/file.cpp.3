@@ -1,0 +1,110 @@
+.TH "file.cpp" 3 "Сб 30 Май 2020" "РГЗ" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+file.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'file\&.h'\fP
+.br
+
+.SS "Функции"
+
+.in +1c
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBfile\fP &f1, const \fBfile\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBfile\fP &f1, const \fBfile\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBexecutable_file\fP &f1, const \fBexecutable_file\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBexecutable_file\fP &f1, const \fBexecutable_file\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBnon_executable_file\fP &f1, const \fBnon_executable_file\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBnon_executable_file\fP &f1, const \fBnon_executable_file\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBcheck_str\fP (const std::string &str)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBfile\fP &f)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBexecutable_file\fP &f)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, const \fBnon_executable_file\fP &f)"
+.br
+.ti -1c
+.RI "std::istream & \fBoperator>>\fP (std::istream &is, \fBexecutable_file\fP &f)"
+.br
+.ti -1c
+.RI "std::istream & \fBoperator>>\fP (std::istream &is, \fBnon_executable_file\fP &f)"
+.br
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBfile\fP &f1, const \fBfile\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBfile\fP &f1, const \fBfile\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBexecutable_file\fP &f1, const \fBexecutable_file\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBexecutable_file\fP &f1, const \fBexecutable_file\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBnon_executable_file\fP &f1, const \fBnon_executable_file\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBnon_executable_file\fP &f1, const \fBnon_executable_file\fP &f2)"
+.br
+.in -1c
+.SH "Функции"
+.PP 
+.SS "bool check_str (const std::string & str)"
+
+.SS "bool operator!= (const \fBexecutable_file\fP & f1, const \fBexecutable_file\fP & f2)"
+
+.SS "bool operator!= (const \fBfile\fP & f1, const \fBfile\fP & f2)"
+
+.SS "bool operator!= (const \fBnon_executable_file\fP & f1, const \fBnon_executable_file\fP & f2)"
+
+.SS "bool operator< (const \fBexecutable_file\fP & f1, const \fBexecutable_file\fP & f2)"
+
+.SS "bool operator< (const \fBfile\fP & f1, const \fBfile\fP & f2)"
+
+.SS "bool operator< (const \fBnon_executable_file\fP & f1, const \fBnon_executable_file\fP & f2)"
+
+.SS "std::ostream& operator<< (std::ostream & os, const \fBexecutable_file\fP & f)"
+
+.SS "std::ostream& operator<< (std::ostream & os, const \fBfile\fP & f)"
+
+.SS "std::ostream& operator<< (std::ostream & os, const \fBnon_executable_file\fP & f)"
+
+.SS "bool operator== (const \fBexecutable_file\fP & f1, const \fBexecutable_file\fP & f2)"
+
+.SS "bool operator== (const \fBfile\fP & f1, const \fBfile\fP & f2)"
+
+.SS "bool operator== (const \fBnon_executable_file\fP & f1, const \fBnon_executable_file\fP & f2)"
+
+.SS "bool operator> (const \fBexecutable_file\fP & f1, const \fBexecutable_file\fP & f2)"
+
+.SS "bool operator> (const \fBfile\fP & f1, const \fBfile\fP & f2)"
+
+.SS "bool operator> (const \fBnon_executable_file\fP & f1, const \fBnon_executable_file\fP & f2)"
+
+.SS "std::istream& operator>> (std::istream & is, \fBexecutable_file\fP & f)"
+
+.SS "std::istream& operator>> (std::istream & is, \fBnon_executable_file\fP & f)"
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для РГЗ из исходного текста\&.

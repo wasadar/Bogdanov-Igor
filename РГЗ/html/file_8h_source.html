@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>РГЗ: Исходный файл file.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">РГЗ
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">file.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="file_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _CRT_SECURE_NO_WARNINGS</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="file_8h.html#af08ec37a8c99d747fb60fa15bc28678b">    3</a></span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;regex&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">size_t</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classoptions.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classoptions.html">options</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classoptions.html#a52663dac3e9fe794dfa88ca26a06c27a">   18</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classoptions.html#a52663dac3e9fe794dfa88ca26a06c27a">issystem</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classoptions.html#a44745c39eb4ad12045672407d822a3ad">   19</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classoptions.html#a44745c39eb4ad12045672407d822a3ad">ishidden</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classoptions.html#a9747ad74565c36763592df2c30916164">get_sys</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classoptions.html#afff84cb0cfd5c3f27acb42fa46504228">get_hid</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classoptions.html#a07748e9416c3e7a1818b2895867add7c">change_sys</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp;);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classoptions.html#a5f249e670ab2937bcad36674e500f980">change_hid</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp;);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classfile.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfile.html">file</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classfile.html#a8c5194677e158dcb86cd615757868b20">   28</a></span>&#160;    <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a> <a class="code" href="classfile.html#a8c5194677e158dcb86cd615757868b20">x</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classfile.html#a3b84c2d986ba893b9b581ed5ccab3d16">   29</a></span>&#160;    <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a> <a class="code" href="classfile.html#a3b84c2d986ba893b9b581ed5ccab3d16">size</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classfile.html#aa939483cc9b70451655aba8b7634a58b">   30</a></span>&#160;    <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a> <a class="code" href="classfile.html#aa939483cc9b70451655aba8b7634a58b">index</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classfile.html#a7cf554ce9ba7f26898f257278207f215">   31</a></span>&#160;    <a class="code" href="classoptions.html">options</a> <a class="code" href="classfile.html#a7cf554ce9ba7f26898f257278207f215">opt</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfile.html#a244ed6ab8e7a5f7b51c1af5a16f1a5ca">   32</a></span>&#160;    std::string <a class="code" href="classfile.html#a244ed6ab8e7a5f7b51c1af5a16f1a5ca">name</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfile.html#aad94c112abcf61ec0a65161f01cb6105">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classfile.html#aad94c112abcf61ec0a65161f01cb6105">type_of_file</a> = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a> <a class="code" href="classfile.html#ab705312b1a6943c01059587127329f5a">get_x</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a> <a class="code" href="classfile.html#a66f8e85d83599af25c40ee4c06d306ef">get_size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a> <a class="code" href="classfile.html#acde071b9339a2be3d9baea9e29c2299c">get_index</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfile.html#a2519f47e85dc49b53e513bf0f3897be7">get_sys</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfile.html#a30c2d660f35c7e0e4382866768e4803e">get_hid</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classfile.html#a943beec2319762294aa063a0e0277b46">get_name</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfile.html#a67ca4425e2495a074e3a2511faf08085">change_x</a>(<span class="keyword">const</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfile.html#ac213b14fca9fd873a225c290e537f2f4">change_size</a>(<span class="keyword">const</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfile.html#a0b0a976a9372d115ef1cb15a61e983e5">change_index</a>(<span class="keyword">const</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfile.html#a9c105a7acb0ce3549d1dcb89d2b43a8f">change_sys</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp;);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfile.html#a9f03e15a6c697df1e9a3491a1f77def0">change_hid</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp;);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfile.html#a251477318bdaa3e759bd0a769d0db8e5">change_name</a>(<span class="keyword">const</span> std::string&amp;);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classfile.html#a10cff9f6257b00db7c7617b5662813fb">get_info</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classfile.html#a22090815b0614f552f2cb2cc8f170572">file</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classfile.html#a22090815b0614f552f2cb2cc8f170572">file</a>(<span class="keyword">const</span> <a class="code" href="classfile.html">file</a>&amp;);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classfile.html#a22090815b0614f552f2cb2cc8f170572">file</a>(<span class="keyword">const</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;, <span class="keyword">const</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;, <span class="keyword">const</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp;, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp;, <span class="keyword">const</span> std::string&amp;);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classfile.html#a7174566303bcda6dc7d47cc0997c8c42">~file</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classfile.html">file</a>&amp; <a class="code" href="classfile.html#a397057190ee724d2500f2288b6c66c87">operator=</a>(<span class="keyword">const</span> <a class="code" href="classfile.html">file</a>&amp; f);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classfile.html#a47cc16b23362174f160229d606eb11f4">operator==</a>(<span class="keyword">const</span> <a class="code" href="classfile.html">file</a>&amp; f1, <span class="keyword">const</span> <a class="code" href="classfile.html">file</a>&amp; f2);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classfile.html#a327d0e1848a2a42ec460ee9ea6c8f4bf">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classfile.html">file</a>&amp; f1, <span class="keyword">const</span> <a class="code" href="classfile.html">file</a>&amp; f2);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classexecutable__file.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="classexecutable__file.html">executable_file</a> final : <span class="keyword">public</span> <a class="code" href="classfile.html">file</a> { </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>: </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classexecutable__file.html#a028e4d4e9417da13590c2605ad6e0b5e">   58</a></span>&#160;    <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a> <a class="code" href="classexecutable__file.html#a028e4d4e9417da13590c2605ad6e0b5e">runningtime</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a> <a class="code" href="classexecutable__file.html#a85aa19dbcfb43f37d7e36e186c8bfce2">get_time</a>() const final;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    virtual <span class="keywordtype">void</span> <a class="code" href="classexecutable__file.html#aadc4910eca7b24839fdbcece003ea621">change_time</a>(const <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;) final;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classexecutable__file.html">executable_file</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classexecutable__file.html">executable_file</a>(const <a class="code" href="classexecutable__file.html">executable_file</a>&amp;);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classexecutable__file.html">executable_file</a>(const <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;, const <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;, const <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;, const <span class="keywordtype">bool</span>&amp;, const <span class="keywordtype">bool</span>&amp;, const std::<span class="keywordtype">string</span>&amp;, const <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ~<a class="code" href="classexecutable__file.html">executable_file</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    virtual std::<span class="keywordtype">string</span> <a class="code" href="classexecutable__file.html#aa25da79e0cef1925c99aec430a4b87f6">get_info</a>() const final;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classexecutable__file.html">executable_file</a>&amp; operator=(const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    friend <span class="keywordtype">bool</span> operator==(const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f1, const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    friend <span class="keywordtype">bool</span> operator!=(const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f1, const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classnon__executable__file.html">   71</a></span>&#160;class <a class="code" href="classnon__executable__file.html">non_executable_file</a> final : public <a class="code" href="classfile.html">file</a> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classnon__executable__file.html#ac097ecde28b72e76e61631b53be55fc0">   73</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classnon__executable__file.html#ac097ecde28b72e76e61631b53be55fc0">is_text</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> get_text() const final;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    virtual <span class="keywordtype">void</span> change_text(const <span class="keywordtype">bool</span>&amp;) final;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classnon__executable__file.html">non_executable_file</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classnon__executable__file.html">non_executable_file</a>(const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp;);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classnon__executable__file.html">non_executable_file</a>(const <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;, const <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;, const <a class="code" href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a>&amp;, const <span class="keywordtype">bool</span>&amp;, const <span class="keywordtype">bool</span>&amp;, const std::<span class="keywordtype">string</span>&amp;, const  <span class="keywordtype">bool</span>&amp;);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    ~<a class="code" href="classnon__executable__file.html">non_executable_file</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    virtual std::<span class="keywordtype">string</span> <a class="code" href="classexecutable__file.html#aa25da79e0cef1925c99aec430a4b87f6">get_info</a>() const final;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; operator=(const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    friend <span class="keywordtype">bool</span> operator==(const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f1, const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    friend <span class="keywordtype">bool</span> operator!=(const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f1, const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="file_8h.html#aa0269ee2fe1365d17257a7f753336533">check_str</a>(const std::<span class="keywordtype">string</span>&amp; str);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">bool</span> operator==(const <a class="code" href="classfile.html">file</a>&amp; f1, const <a class="code" href="classfile.html">file</a>&amp; f2);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">bool</span> operator!=(const <a class="code" href="classfile.html">file</a>&amp; f1, const <a class="code" href="classfile.html">file</a>&amp; f2);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">bool</span> operator==(const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f1, const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">bool</span> operator!=(const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f1, const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">bool</span> operator==(const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f1, const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">bool</span> operator!=(const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f1, const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">bool</span> operator&gt;(const <a class="code" href="classfile.html">file</a>&amp; f1, const <a class="code" href="classfile.html">file</a>&amp; f2);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">bool</span> operator&lt;(const <a class="code" href="classfile.html">file</a>&amp; f1, const <a class="code" href="classfile.html">file</a>&amp; f2);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">bool</span> operator&gt;(const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f1, const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">bool</span> operator&lt;(const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f1, const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">bool</span> operator&gt;(const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f1, const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">bool</span> operator&lt;(const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f1, const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f2);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, const <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, const <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;std::istream&amp; operator&gt;&gt;(std::istream&amp; is, <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;std::istream&amp; operator&gt;&gt;(std::istream&amp; is, <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, const <a class="code" href="classfile.html">file</a>&amp; f);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassexecutable__file_html_a85aa19dbcfb43f37d7e36e186c8bfce2"><div class="ttname"><a href="classexecutable__file.html#a85aa19dbcfb43f37d7e36e186c8bfce2">executable_file::get_time</a></div><div class="ttdeci">virtual size_t_t get_time() const final</div><div class="ttdef"><b>Definition:</b> file.cpp:79</div></div>
+<div class="ttc" id="aclassexecutable__file_html_aa25da79e0cef1925c99aec430a4b87f6"><div class="ttname"><a href="classexecutable__file.html#aa25da79e0cef1925c99aec430a4b87f6">executable_file::get_info</a></div><div class="ttdeci">virtual std::string get_info() const final</div><div class="ttdef"><b>Definition:</b> file.cpp:111</div></div>
+<div class="ttc" id="aclassoptions_html_a9747ad74565c36763592df2c30916164"><div class="ttname"><a href="classoptions.html#a9747ad74565c36763592df2c30916164">options::get_sys</a></div><div class="ttdeci">bool get_sys() const</div><div class="ttdef"><b>Definition:</b> file.cpp:67</div></div>
+<div class="ttc" id="aclassfile_html_a244ed6ab8e7a5f7b51c1af5a16f1a5ca"><div class="ttname"><a href="classfile.html#a244ed6ab8e7a5f7b51c1af5a16f1a5ca">file::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> file.h:32</div></div>
+<div class="ttc" id="aclassfile_html_a66f8e85d83599af25c40ee4c06d306ef"><div class="ttname"><a href="classfile.html#a66f8e85d83599af25c40ee4c06d306ef">file::get_size</a></div><div class="ttdeci">virtual size_t_t get_size() const</div><div class="ttdef"><b>Definition:</b> file.cpp:6</div></div>
+<div class="ttc" id="afile_8h_html_aa0269ee2fe1365d17257a7f753336533"><div class="ttname"><a href="file_8h.html#aa0269ee2fe1365d17257a7f753336533">check_str</a></div><div class="ttdeci">bool check_str(const std::string &amp;str)</div><div class="ttdef"><b>Definition:</b> file.cpp:205</div></div>
+<div class="ttc" id="aclassfile_html_ab705312b1a6943c01059587127329f5a"><div class="ttname"><a href="classfile.html#ab705312b1a6943c01059587127329f5a">file::get_x</a></div><div class="ttdeci">virtual size_t_t get_x() const</div><div class="ttdef"><b>Definition:</b> file.cpp:3</div></div>
+<div class="ttc" id="aclassexecutable__file_html_a028e4d4e9417da13590c2605ad6e0b5e"><div class="ttname"><a href="classexecutable__file.html#a028e4d4e9417da13590c2605ad6e0b5e">executable_file::runningtime</a></div><div class="ttdeci">size_t_t runningtime</div><div class="ttdef"><b>Definition:</b> file.h:58</div></div>
+<div class="ttc" id="aclassfile_html_a2519f47e85dc49b53e513bf0f3897be7"><div class="ttname"><a href="classfile.html#a2519f47e85dc49b53e513bf0f3897be7">file::get_sys</a></div><div class="ttdeci">virtual bool get_sys() const</div><div class="ttdef"><b>Definition:</b> file.cpp:12</div></div>
+<div class="ttc" id="aclassfile_html_a0b0a976a9372d115ef1cb15a61e983e5"><div class="ttname"><a href="classfile.html#a0b0a976a9372d115ef1cb15a61e983e5">file::change_index</a></div><div class="ttdeci">virtual void change_index(const size_t_t &amp;)</div><div class="ttdef"><b>Definition:</b> file.cpp:27</div></div>
+<div class="ttc" id="aclassfile_html_acde071b9339a2be3d9baea9e29c2299c"><div class="ttname"><a href="classfile.html#acde071b9339a2be3d9baea9e29c2299c">file::get_index</a></div><div class="ttdeci">virtual size_t_t get_index() const</div><div class="ttdef"><b>Definition:</b> file.cpp:9</div></div>
+<div class="ttc" id="aclassfile_html_a10cff9f6257b00db7c7617b5662813fb"><div class="ttname"><a href="classfile.html#a10cff9f6257b00db7c7617b5662813fb">file::get_info</a></div><div class="ttdeci">virtual std::string get_info() const</div><div class="ttdef"><b>Definition:</b> file.cpp:428</div></div>
+<div class="ttc" id="aclassfile_html_a397057190ee724d2500f2288b6c66c87"><div class="ttname"><a href="classfile.html#a397057190ee724d2500f2288b6c66c87">file::operator=</a></div><div class="ttdeci">file &amp; operator=(const file &amp;f)</div><div class="ttdef"><b>Definition:</b> file.cpp:399</div></div>
+<div class="ttc" id="aclassfile_html_a22090815b0614f552f2cb2cc8f170572"><div class="ttname"><a href="classfile.html#a22090815b0614f552f2cb2cc8f170572">file::file</a></div><div class="ttdeci">file()</div><div class="ttdef"><b>Definition:</b> file.cpp:39</div></div>
+<div class="ttc" id="aclassfile_html_a943beec2319762294aa063a0e0277b46"><div class="ttname"><a href="classfile.html#a943beec2319762294aa063a0e0277b46">file::get_name</a></div><div class="ttdeci">virtual std::string get_name() const</div><div class="ttdef"><b>Definition:</b> file.cpp:18</div></div>
+<div class="ttc" id="aclassnon__executable__file_html_ac097ecde28b72e76e61631b53be55fc0"><div class="ttname"><a href="classnon__executable__file.html#ac097ecde28b72e76e61631b53be55fc0">non_executable_file::is_text</a></div><div class="ttdeci">bool is_text</div><div class="ttdef"><b>Definition:</b> file.h:73</div></div>
+<div class="ttc" id="aclassoptions_html_a07748e9416c3e7a1818b2895867add7c"><div class="ttname"><a href="classoptions.html#a07748e9416c3e7a1818b2895867add7c">options::change_sys</a></div><div class="ttdeci">void change_sys(const bool &amp;)</div><div class="ttdef"><b>Definition:</b> file.cpp:73</div></div>
+<div class="ttc" id="aclassoptions_html_a44745c39eb4ad12045672407d822a3ad"><div class="ttname"><a href="classoptions.html#a44745c39eb4ad12045672407d822a3ad">options::ishidden</a></div><div class="ttdeci">bool ishidden</div><div class="ttdef"><b>Definition:</b> file.h:19</div></div>
+<div class="ttc" id="aclassfile_html_a67ca4425e2495a074e3a2511faf08085"><div class="ttname"><a href="classfile.html#a67ca4425e2495a074e3a2511faf08085">file::change_x</a></div><div class="ttdeci">virtual void change_x(const size_t_t &amp;)</div><div class="ttdef"><b>Definition:</b> file.cpp:21</div></div>
+<div class="ttc" id="aclassfile_html_aad94c112abcf61ec0a65161f01cb6105"><div class="ttname"><a href="classfile.html#aad94c112abcf61ec0a65161f01cb6105">file::type_of_file</a></div><div class="ttdeci">int type_of_file</div><div class="ttdef"><b>Definition:</b> file.h:34</div></div>
+<div class="ttc" id="aclassfile_html_a9f03e15a6c697df1e9a3491a1f77def0"><div class="ttname"><a href="classfile.html#a9f03e15a6c697df1e9a3491a1f77def0">file::change_hid</a></div><div class="ttdeci">virtual void change_hid(const bool &amp;)</div><div class="ttdef"><b>Definition:</b> file.cpp:33</div></div>
+<div class="ttc" id="aclassnon__executable__file_html"><div class="ttname"><a href="classnon__executable__file.html">non_executable_file</a></div><div class="ttdef"><b>Definition:</b> file.h:71</div></div>
+<div class="ttc" id="aclassfile_html"><div class="ttname"><a href="classfile.html">file</a></div><div class="ttdef"><b>Definition:</b> file.h:26</div></div>
+<div class="ttc" id="aclassfile_html_a251477318bdaa3e759bd0a769d0db8e5"><div class="ttname"><a href="classfile.html#a251477318bdaa3e759bd0a769d0db8e5">file::change_name</a></div><div class="ttdeci">virtual void change_name(const std::string &amp;)</div><div class="ttdef"><b>Definition:</b> file.cpp:36</div></div>
+<div class="ttc" id="aclassoptions_html_a5f249e670ab2937bcad36674e500f980"><div class="ttname"><a href="classoptions.html#a5f249e670ab2937bcad36674e500f980">options::change_hid</a></div><div class="ttdeci">void change_hid(const bool &amp;)</div><div class="ttdef"><b>Definition:</b> file.cpp:76</div></div>
+<div class="ttc" id="aclassoptions_html_afff84cb0cfd5c3f27acb42fa46504228"><div class="ttname"><a href="classoptions.html#afff84cb0cfd5c3f27acb42fa46504228">options::get_hid</a></div><div class="ttdeci">bool get_hid() const</div><div class="ttdef"><b>Definition:</b> file.cpp:70</div></div>
+<div class="ttc" id="aclassfile_html_a47cc16b23362174f160229d606eb11f4"><div class="ttname"><a href="classfile.html#a47cc16b23362174f160229d606eb11f4">file::operator==</a></div><div class="ttdeci">friend bool operator==(const file &amp;f1, const file &amp;f2)</div><div class="ttdef"><b>Definition:</b> file.cpp:121</div></div>
+<div class="ttc" id="aclassfile_html_ac213b14fca9fd873a225c290e537f2f4"><div class="ttname"><a href="classfile.html#ac213b14fca9fd873a225c290e537f2f4">file::change_size</a></div><div class="ttdeci">virtual void change_size(const size_t_t &amp;)</div><div class="ttdef"><b>Definition:</b> file.cpp:24</div></div>
+<div class="ttc" id="aclassoptions_html_a52663dac3e9fe794dfa88ca26a06c27a"><div class="ttname"><a href="classoptions.html#a52663dac3e9fe794dfa88ca26a06c27a">options::issystem</a></div><div class="ttdeci">bool issystem</div><div class="ttdef"><b>Definition:</b> file.h:18</div></div>
+<div class="ttc" id="aclassfile_html_a3b84c2d986ba893b9b581ed5ccab3d16"><div class="ttname"><a href="classfile.html#a3b84c2d986ba893b9b581ed5ccab3d16">file::size</a></div><div class="ttdeci">size_t_t size</div><div class="ttdef"><b>Definition:</b> file.h:29</div></div>
+<div class="ttc" id="aclassexecutable__file_html"><div class="ttname"><a href="classexecutable__file.html">executable_file</a></div><div class="ttdef"><b>Definition:</b> file.h:56</div></div>
+<div class="ttc" id="aclassfile_html_a9c105a7acb0ce3549d1dcb89d2b43a8f"><div class="ttname"><a href="classfile.html#a9c105a7acb0ce3549d1dcb89d2b43a8f">file::change_sys</a></div><div class="ttdeci">virtual void change_sys(const bool &amp;)</div><div class="ttdef"><b>Definition:</b> file.cpp:30</div></div>
+<div class="ttc" id="aclassfile_html_a7174566303bcda6dc7d47cc0997c8c42"><div class="ttname"><a href="classfile.html#a7174566303bcda6dc7d47cc0997c8c42">file::~file</a></div><div class="ttdeci">~file()</div><div class="ttdef"><b>Definition:</b> file.cpp:64</div></div>
+<div class="ttc" id="aclassfile_html_a327d0e1848a2a42ec460ee9ea6c8f4bf"><div class="ttname"><a href="classfile.html#a327d0e1848a2a42ec460ee9ea6c8f4bf">file::operator!=</a></div><div class="ttdeci">friend bool operator!=(const file &amp;f1, const file &amp;f2)</div><div class="ttdef"><b>Definition:</b> file.cpp:144</div></div>
+<div class="ttc" id="aclassfile_html_a30c2d660f35c7e0e4382866768e4803e"><div class="ttname"><a href="classfile.html#a30c2d660f35c7e0e4382866768e4803e">file::get_hid</a></div><div class="ttdeci">virtual bool get_hid() const</div><div class="ttdef"><b>Definition:</b> file.cpp:15</div></div>
+<div class="ttc" id="aclassfile_html_aa939483cc9b70451655aba8b7634a58b"><div class="ttname"><a href="classfile.html#aa939483cc9b70451655aba8b7634a58b">file::index</a></div><div class="ttdeci">size_t_t index</div><div class="ttdef"><b>Definition:</b> file.h:30</div></div>
+<div class="ttc" id="aclassfile_html_a8c5194677e158dcb86cd615757868b20"><div class="ttname"><a href="classfile.html#a8c5194677e158dcb86cd615757868b20">file::x</a></div><div class="ttdeci">size_t_t x</div><div class="ttdef"><b>Definition:</b> file.h:28</div></div>
+<div class="ttc" id="aclassoptions_html"><div class="ttname"><a href="classoptions.html">options</a></div><div class="ttdef"><b>Definition:</b> file.h:16</div></div>
+<div class="ttc" id="afile_8h_html_ab80423ed871d7d0711b4ede6ff6fe08f"><div class="ttname"><a href="file_8h.html#ab80423ed871d7d0711b4ede6ff6fe08f">size_t_t</a></div><div class="ttdeci">size_t size_t_t</div><div class="ttdef"><b>Definition:</b> file.h:14</div></div>
+<div class="ttc" id="aclassexecutable__file_html_aadc4910eca7b24839fdbcece003ea621"><div class="ttname"><a href="classexecutable__file.html#aadc4910eca7b24839fdbcece003ea621">executable_file::change_time</a></div><div class="ttdeci">virtual void change_time(const size_t_t &amp;) final</div><div class="ttdef"><b>Definition:</b> file.cpp:92</div></div>
+<div class="ttc" id="aclassfile_html_a7cf554ce9ba7f26898f257278207f215"><div class="ttname"><a href="classfile.html#a7cf554ce9ba7f26898f257278207f215">file::opt</a></div><div class="ttdeci">options opt</div><div class="ttdef"><b>Definition:</b> file.h:31</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

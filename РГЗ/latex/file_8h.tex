@@ -1,0 +1,201 @@
+\hypertarget{file_8h}{}\doxysection{Файл file.\+h}
+\label{file_8h}\index{file.h@{file.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$regex$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classoptions}{options}}
+\item 
+class \mbox{\hyperlink{classfile}{file}}
+\item 
+class \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}}
+\item 
+class \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{file_8h_af08ec37a8c99d747fb60fa15bc28678b}{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+W\+A\+R\+N\+I\+N\+GS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Определения типов}
+\begin{DoxyCompactItemize}
+\item 
+typedef size\+\_\+t \mbox{\hyperlink{file_8h_ab80423ed871d7d0711b4ede6ff6fe08f}{size\+\_\+t\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{file_8h_aa0269ee2fe1365d17257a7f753336533}{check\+\_\+str}} (const std\+::string \&str)
+\item 
+bool \mbox{\hyperlink{file_8h_a47cc16b23362174f160229d606eb11f4}{operator==}} (const \mbox{\hyperlink{classfile}{file}} \&f1, const \mbox{\hyperlink{classfile}{file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_a327d0e1848a2a42ec460ee9ea6c8f4bf}{operator!=}} (const \mbox{\hyperlink{classfile}{file}} \&f1, const \mbox{\hyperlink{classfile}{file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_a8882bd5a1e7cc375705628602198927f}{operator==}} (const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f1, const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_a7308b3d394ee5ed7901b21d61ab119a8}{operator!=}} (const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f1, const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_a5546a9165866538031cbed7e75f28413}{operator==}} (const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f1, const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_a3dec9aad82889ea8a4589b00085daecd}{operator!=}} (const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f1, const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_aaf96f79f9d8f8b4c1e05546d5d323dae}{operator$>$}} (const \mbox{\hyperlink{classfile}{file}} \&f1, const \mbox{\hyperlink{classfile}{file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_af7fbc12993728ef33bb89210830603ee}{operator$<$}} (const \mbox{\hyperlink{classfile}{file}} \&f1, const \mbox{\hyperlink{classfile}{file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_adb32152f39dfe798d196ae8b971b0f6c}{operator$>$}} (const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f1, const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_acb90f75833d917c126a7e70e54ea8c92}{operator$<$}} (const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f1, const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_aaa8155a8bfb59ce97abc07c9242c5b4b}{operator$>$}} (const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f1, const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f2)
+\item 
+bool \mbox{\hyperlink{file_8h_a7b1d396da78a7f919a715c8adf3792a9}{operator$<$}} (const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f1, const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f2)
+\item 
+std\+::ostream \& \mbox{\hyperlink{file_8h_a4bcfa2b58c11770eac85d7420983d898}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f)
+\item 
+std\+::ostream \& \mbox{\hyperlink{file_8h_ae30ad401e962fc117d4ff31b99a6c90a}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f)
+\item 
+std\+::istream \& \mbox{\hyperlink{file_8h_a19700310134914b1718909dc25750e50}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f)
+\item 
+std\+::istream \& \mbox{\hyperlink{file_8h_af86ebd1b43e3d481c00b3f00802378f0}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f)
+\item 
+std\+::ostream \& \mbox{\hyperlink{file_8h_a57feeb953d683a3e3f791d03f7003a8a}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classfile}{file}} \&f)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Макросы}
+\mbox{\Hypertarget{file_8h_af08ec37a8c99d747fb60fa15bc28678b}\label{file_8h_af08ec37a8c99d747fb60fa15bc28678b}} 
+\index{file.h@{file.h}!\_CRT\_SECURE\_NO\_WARNINGS@{\_CRT\_SECURE\_NO\_WARNINGS}}
+\index{\_CRT\_SECURE\_NO\_WARNINGS@{\_CRT\_SECURE\_NO\_WARNINGS}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{\_CRT\_SECURE\_NO\_WARNINGS}{\_CRT\_SECURE\_NO\_WARNINGS}}
+{\footnotesize\ttfamily \#define \+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+W\+A\+R\+N\+I\+N\+GS}
+
+
+
+\doxysubsection{Типы}
+\mbox{\Hypertarget{file_8h_ab80423ed871d7d0711b4ede6ff6fe08f}\label{file_8h_ab80423ed871d7d0711b4ede6ff6fe08f}} 
+\index{file.h@{file.h}!size\_t\_t@{size\_t\_t}}
+\index{size\_t\_t@{size\_t\_t}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{size\_t\_t}{size\_t\_t}}
+{\footnotesize\ttfamily typedef size\+\_\+t \mbox{\hyperlink{file_8h_ab80423ed871d7d0711b4ede6ff6fe08f}{size\+\_\+t\+\_\+t}}}
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{file_8h_aa0269ee2fe1365d17257a7f753336533}\label{file_8h_aa0269ee2fe1365d17257a7f753336533}} 
+\index{file.h@{file.h}!check\_str@{check\_str}}
+\index{check\_str@{check\_str}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{check\_str()}{check\_str()}}
+{\footnotesize\ttfamily bool check\+\_\+str (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_a7308b3d394ee5ed7901b21d61ab119a8}\label{file_8h_a7308b3d394ee5ed7901b21d61ab119a8}} 
+\index{file.h@{file.h}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_a327d0e1848a2a42ec460ee9ea6c8f4bf}\label{file_8h_a327d0e1848a2a42ec460ee9ea6c8f4bf}} 
+\index{file.h@{file.h}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classfile}{file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classfile}{file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_a3dec9aad82889ea8a4589b00085daecd}\label{file_8h_a3dec9aad82889ea8a4589b00085daecd}} 
+\index{file.h@{file.h}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_acb90f75833d917c126a7e70e54ea8c92}\label{file_8h_acb90f75833d917c126a7e70e54ea8c92}} 
+\index{file.h@{file.h}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_af7fbc12993728ef33bb89210830603ee}\label{file_8h_af7fbc12993728ef33bb89210830603ee}} 
+\index{file.h@{file.h}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classfile}{file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classfile}{file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_a7b1d396da78a7f919a715c8adf3792a9}\label{file_8h_a7b1d396da78a7f919a715c8adf3792a9}} 
+\index{file.h@{file.h}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_a4bcfa2b58c11770eac85d7420983d898}\label{file_8h_a4bcfa2b58c11770eac85d7420983d898}} 
+\index{file.h@{file.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_a57feeb953d683a3e3f791d03f7003a8a}\label{file_8h_a57feeb953d683a3e3f791d03f7003a8a}} 
+\index{file.h@{file.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classfile}{file}} \&}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_ae30ad401e962fc117d4ff31b99a6c90a}\label{file_8h_ae30ad401e962fc117d4ff31b99a6c90a}} 
+\index{file.h@{file.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_a8882bd5a1e7cc375705628602198927f}\label{file_8h_a8882bd5a1e7cc375705628602198927f}} 
+\index{file.h@{file.h}!operator==@{operator==}}
+\index{operator==@{operator==}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_a47cc16b23362174f160229d606eb11f4}\label{file_8h_a47cc16b23362174f160229d606eb11f4}} 
+\index{file.h@{file.h}!operator==@{operator==}}
+\index{operator==@{operator==}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classfile}{file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classfile}{file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_a5546a9165866538031cbed7e75f28413}\label{file_8h_a5546a9165866538031cbed7e75f28413}} 
+\index{file.h@{file.h}!operator==@{operator==}}
+\index{operator==@{operator==}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_adb32152f39dfe798d196ae8b971b0f6c}\label{file_8h_adb32152f39dfe798d196ae8b971b0f6c}} 
+\index{file.h@{file.h}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_aaf96f79f9d8f8b4c1e05546d5d323dae}\label{file_8h_aaf96f79f9d8f8b4c1e05546d5d323dae}} 
+\index{file.h@{file.h}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classfile}{file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classfile}{file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_aaa8155a8bfb59ce97abc07c9242c5b4b}\label{file_8h_aaa8155a8bfb59ce97abc07c9242c5b4b}} 
+\index{file.h@{file.h}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f1,  }\item[{const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_a19700310134914b1718909dc25750e50}\label{file_8h_a19700310134914b1718909dc25750e50}} 
+\index{file.h@{file.h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8h_af86ebd1b43e3d481c00b3f00802378f0}\label{file_8h_af86ebd1b43e3d481c00b3f00802378f0}} 
+\index{file.h@{file.h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!file.h@{file.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f }\end{DoxyParamCaption})}
+

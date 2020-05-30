@@ -1,0 +1,56 @@
+.TH "options" 3 "Сб 30 Май 2020" "РГЗ" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+options
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <file\&.h>\fP
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "bool \fBget_sys\fP () const"
+.br
+.ti -1c
+.RI "bool \fBget_hid\fP () const"
+.br
+.ti -1c
+.RI "void \fBchange_sys\fP (const bool &)"
+.br
+.ti -1c
+.RI "void \fBchange_hid\fP (const bool &)"
+.br
+.in -1c
+.SS "Закрытые данные"
+
+.in +1c
+.ti -1c
+.RI "bool \fBissystem\fP"
+.br
+.ti -1c
+.RI "bool \fBishidden\fP"
+.br
+.in -1c
+.SH "Методы"
+.PP 
+.SS "void options::change_hid (const bool & hid)"
+
+.SS "void options::change_sys (const bool & sys)"
+
+.SS "bool options::get_hid () const"
+
+.SS "bool options::get_sys () const"
+
+.SH "Данные класса"
+.PP 
+.SS "bool options::ishidden\fC [private]\fP"
+
+.SS "bool options::issystem\fC [private]\fP"
+
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для РГЗ из исходного текста\&.

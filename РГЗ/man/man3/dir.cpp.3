@@ -1,0 +1,55 @@
+.TH "dir.cpp" 3 "Сб 30 Май 2020" "РГЗ" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+dir.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'dir\&.h'\fP
+.br
+
+.SS "Функции"
+
+.in +1c
+.ti -1c
+.RI "bool \fBsort_version\fP (\fBfile\fP &first, \fBfile\fP &second)"
+.br
+.ti -1c
+.RI "bool \fBsort_size\fP (\fBfile\fP &first, \fBfile\fP &second)"
+.br
+.ti -1c
+.RI "bool \fBsort_ind\fP (\fBfile\fP &first, \fBfile\fP &second)"
+.br
+.ti -1c
+.RI "bool \fBsort_opt\fP (\fBfile\fP &first, \fBfile\fP &second)"
+.br
+.ti -1c
+.RI "bool \fBsort_name\fP (\fBfile\fP &first, \fBfile\fP &second)"
+.br
+.ti -1c
+.RI "std::istream & \fBoperator>>\fP (std::istream &is, \fBdir\fP &d)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &os, \fBdir\fP &d)"
+.br
+.in -1c
+.SH "Функции"
+.PP 
+.SS "std::ostream& operator<< (std::ostream & os, \fBdir\fP & d)"
+
+.SS "std::istream& operator>> (std::istream & is, \fBdir\fP & d)"
+
+.SS "bool sort_ind (\fBfile\fP & first, \fBfile\fP & second)"
+
+.SS "bool sort_name (\fBfile\fP & first, \fBfile\fP & second)"
+
+.SS "bool sort_opt (\fBfile\fP & first, \fBfile\fP & second)"
+
+.SS "bool sort_size (\fBfile\fP & first, \fBfile\fP & second)"
+
+.SS "bool sort_version (\fBfile\fP & first, \fBfile\fP & second)"
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для РГЗ из исходного текста\&.

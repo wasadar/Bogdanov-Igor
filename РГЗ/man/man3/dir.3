@@ -1,0 +1,132 @@
+.TH "dir" 3 "Сб 30 Май 2020" "РГЗ" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+dir
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dir\&.h>\fP
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "void \fBadd_file\fP (const \fBexecutable_file\fP &f)"
+.br
+.ti -1c
+.RI "void \fBadd_file\fP (const \fBnon_executable_file\fP &f)"
+.br
+.ti -1c
+.RI "void \fBdel_file\fP (const int &index)"
+.br
+.ti -1c
+.RI "void \fBdel_all\fP ()"
+.br
+.ti -1c
+.RI "void \fBadd_file_by_str\fP (const std::string &str)"
+.br
+.ti -1c
+.RI "void \fBread_from_file\fP (const std::string &name)"
+.br
+.ti -1c
+.RI "std::string \fBget_file_to_str\fP (const int &index) const"
+.br
+.ti -1c
+.RI "\fBfile\fP * \fBget_file_by_index\fP (const int &index) const"
+.br
+.ti -1c
+.RI "void \fBprint_all\fP () const"
+.br
+.ti -1c
+.RI "int \fBcount_system\fP () const"
+.br
+.ti -1c
+.RI "void \fBprint_to_file\fP (const std::string &name) const"
+.br
+.ti -1c
+.RI "bool \fBcheck_str\fP (const std::string &str) const"
+.br
+.ti -1c
+.RI "void \fBprint_all_with_2_or_more_words\fP () const"
+.br
+.ti -1c
+.RI "void \fBsort_files\fP (bool(*f)(\fBfile\fP &, \fBfile\fP &))"
+.br
+.ti -1c
+.RI "\fBfile\fP * \fBoperator[]\fP (const int &index)"
+.br
+.in -1c
+.SS "Закрытые данные"
+
+.in +1c
+.ti -1c
+.RI "\fBfile\fP ** \fBfiles\fP"
+.br
+.ti -1c
+.RI "\fBfile\fP ** \fBcopy\fP"
+.br
+.ti -1c
+.RI "int \fBnext_ind\fP = 0"
+.br
+.ti -1c
+.RI "int \fBnew_ind\fP = 1"
+.br
+.in -1c
+.SS "Друзья"
+
+.in +1c
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &on, \fBdir\fP &d)"
+.br
+.in -1c
+.SH "Методы"
+.PP 
+.SS "void dir::add_file (const \fBexecutable_file\fP & f)"
+
+.SS "void dir::add_file (const \fBnon_executable_file\fP & f)"
+
+.SS "void dir::add_file_by_str (const std::string & str)"
+
+.SS "bool dir::check_str (const std::string & str) const"
+
+.SS "int dir::count_system () const"
+
+.SS "void dir::del_all ()"
+
+.SS "void dir::del_file (const int & index)"
+
+.SS "\fBfile\fP * dir::get_file_by_index (const int & index) const"
+
+.SS "std::string dir::get_file_to_str (const int & index) const"
+
+.SS "\fBfile\fP * dir::operator[] (const int & index)"
+
+.SS "void dir::print_all () const"
+
+.SS "void dir::print_all_with_2_or_more_words () const"
+
+.SS "void dir::print_to_file (const std::string & name) const"
+
+.SS "void dir::read_from_file (const std::string & name)"
+
+.SS "void dir::sort_files (bool(*)(\fBfile\fP &, \fBfile\fP &) f)"
+
+.SH "Документация по друзьям класса и функциям, относящимся к классу"
+.PP 
+.SS "std::ostream& operator<< (std::ostream & on, \fBdir\fP & d)\fC [friend]\fP"
+
+.SH "Данные класса"
+.PP 
+.SS "\fBfile\fP** dir::copy\fC [private]\fP"
+
+.SS "\fBfile\fP** dir::files\fC [private]\fP"
+���� - ������\&. 
+.SS "int dir::new_ind = 1\fC [private]\fP"
+
+.SS "int dir::next_ind = 0\fC [private]\fP"
+
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для РГЗ из исходного текста\&.

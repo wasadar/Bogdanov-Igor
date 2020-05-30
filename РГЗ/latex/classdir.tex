@@ -1,0 +1,190 @@
+\hypertarget{classdir}{}\doxysection{Класс dir}
+\label{classdir}\index{dir@{dir}}
+
+
+{\ttfamily \#include $<$dir.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classdir_a894173a727c43dee4585a665b9b7401a}{add\+\_\+file}} (const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&f)
+\item 
+void \mbox{\hyperlink{classdir_af0cc29eafc7efe543e179b9ec2c676d3}{add\+\_\+file}} (const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&f)
+\item 
+void \mbox{\hyperlink{classdir_a9f1e6d9969e3f4935273b29995ae8d95}{del\+\_\+file}} (const int \&index)
+\item 
+void \mbox{\hyperlink{classdir_abea34978959dd24bf01d23626339225e}{del\+\_\+all}} ()
+\item 
+void \mbox{\hyperlink{classdir_af602e371ab97b639e3a0a99610993df3}{add\+\_\+file\+\_\+by\+\_\+str}} (const std\+::string \&str)
+\item 
+void \mbox{\hyperlink{classdir_a1d52da6f2d356cd8fb45afbddbbf8516}{read\+\_\+from\+\_\+file}} (const std\+::string \&name)
+\item 
+std\+::string \mbox{\hyperlink{classdir_ab04e0aa371d91031c4add05db3234ded}{get\+\_\+file\+\_\+to\+\_\+str}} (const int \&index) const
+\item 
+\mbox{\hyperlink{classfile}{file}} $\ast$ \mbox{\hyperlink{classdir_ae183cf5360facaf8375bbf0c3a802415}{get\+\_\+file\+\_\+by\+\_\+index}} (const int \&index) const
+\item 
+void \mbox{\hyperlink{classdir_a31ddce7340d4e382d4d345bdaaea39c1}{print\+\_\+all}} () const
+\item 
+int \mbox{\hyperlink{classdir_a8e20881a617ee10e36a58e7388e6c339}{count\+\_\+system}} () const
+\item 
+void \mbox{\hyperlink{classdir_a4d29a40b92aad18dfdaae86e45931c12}{print\+\_\+to\+\_\+file}} (const std\+::string \&name) const
+\item 
+bool \mbox{\hyperlink{classdir_a03dabc847142c505b51b652e78a4399d}{check\+\_\+str}} (const std\+::string \&str) const
+\item 
+void \mbox{\hyperlink{classdir_ad2d176373423f238e73fc169fd8b5ec9}{print\+\_\+all\+\_\+with\+\_\+2\+\_\+or\+\_\+more\+\_\+words}} () const
+\item 
+void \mbox{\hyperlink{classdir_a513acd5568d8b97eedcf24956db61036}{sort\+\_\+files}} (bool($\ast$f)(\mbox{\hyperlink{classfile}{file}} \&, \mbox{\hyperlink{classfile}{file}} \&))
+\item 
+\mbox{\hyperlink{classfile}{file}} $\ast$ \mbox{\hyperlink{classdir_aca65187d00b70dfcbeba48234dd0bb21}{operator\mbox{[}$\,$\mbox{]}}} (const int \&index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfile}{file}} $\ast$$\ast$ \mbox{\hyperlink{classdir_a378851106b448df0d35acbd1a8500352}{files}}
+\item 
+\mbox{\hyperlink{classfile}{file}} $\ast$$\ast$ \mbox{\hyperlink{classdir_acd9e1745d4dccb01cc0c885d05572e5a}{copy}}
+\item 
+int \mbox{\hyperlink{classdir_a1fa7df88b1565d43074dc1be3ae3700e}{next\+\_\+ind}} = 0
+\item 
+int \mbox{\hyperlink{classdir_abfba2ef640d3a9f2a98594ce04a62021}{new\+\_\+ind}} = 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classdir_a914283861d72010d12de0e3afa1411c4}{operator$<$$<$}} (std\+::ostream \&on, \mbox{\hyperlink{classdir}{dir}} \&d)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classdir_a894173a727c43dee4585a665b9b7401a}\label{classdir_a894173a727c43dee4585a665b9b7401a}} 
+\index{dir@{dir}!add\_file@{add\_file}}
+\index{add\_file@{add\_file}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{add\_file()}{add\_file()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void dir\+::add\+\_\+file (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classexecutable__file}{executable\+\_\+file}} \&}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdir_af0cc29eafc7efe543e179b9ec2c676d3}\label{classdir_af0cc29eafc7efe543e179b9ec2c676d3}} 
+\index{dir@{dir}!add\_file@{add\_file}}
+\index{add\_file@{add\_file}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{add\_file()}{add\_file()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void dir\+::add\+\_\+file (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnon__executable__file}{non\+\_\+executable\+\_\+file}} \&}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdir_af602e371ab97b639e3a0a99610993df3}\label{classdir_af602e371ab97b639e3a0a99610993df3}} 
+\index{dir@{dir}!add\_file\_by\_str@{add\_file\_by\_str}}
+\index{add\_file\_by\_str@{add\_file\_by\_str}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{add\_file\_by\_str()}{add\_file\_by\_str()}}
+{\footnotesize\ttfamily void dir\+::add\+\_\+file\+\_\+by\+\_\+str (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdir_a03dabc847142c505b51b652e78a4399d}\label{classdir_a03dabc847142c505b51b652e78a4399d}} 
+\index{dir@{dir}!check\_str@{check\_str}}
+\index{check\_str@{check\_str}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{check\_str()}{check\_str()}}
+{\footnotesize\ttfamily bool dir\+::check\+\_\+str (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classdir_a8e20881a617ee10e36a58e7388e6c339}\label{classdir_a8e20881a617ee10e36a58e7388e6c339}} 
+\index{dir@{dir}!count\_system@{count\_system}}
+\index{count\_system@{count\_system}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{count\_system()}{count\_system()}}
+{\footnotesize\ttfamily int dir\+::count\+\_\+system (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classdir_abea34978959dd24bf01d23626339225e}\label{classdir_abea34978959dd24bf01d23626339225e}} 
+\index{dir@{dir}!del\_all@{del\_all}}
+\index{del\_all@{del\_all}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{del\_all()}{del\_all()}}
+{\footnotesize\ttfamily void dir\+::del\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdir_a9f1e6d9969e3f4935273b29995ae8d95}\label{classdir_a9f1e6d9969e3f4935273b29995ae8d95}} 
+\index{dir@{dir}!del\_file@{del\_file}}
+\index{del\_file@{del\_file}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{del\_file()}{del\_file()}}
+{\footnotesize\ttfamily void dir\+::del\+\_\+file (\begin{DoxyParamCaption}\item[{const int \&}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdir_ae183cf5360facaf8375bbf0c3a802415}\label{classdir_ae183cf5360facaf8375bbf0c3a802415}} 
+\index{dir@{dir}!get\_file\_by\_index@{get\_file\_by\_index}}
+\index{get\_file\_by\_index@{get\_file\_by\_index}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{get\_file\_by\_index()}{get\_file\_by\_index()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfile}{file}} $\ast$ dir\+::get\+\_\+file\+\_\+by\+\_\+index (\begin{DoxyParamCaption}\item[{const int \&}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classdir_ab04e0aa371d91031c4add05db3234ded}\label{classdir_ab04e0aa371d91031c4add05db3234ded}} 
+\index{dir@{dir}!get\_file\_to\_str@{get\_file\_to\_str}}
+\index{get\_file\_to\_str@{get\_file\_to\_str}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{get\_file\_to\_str()}{get\_file\_to\_str()}}
+{\footnotesize\ttfamily std\+::string dir\+::get\+\_\+file\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{const int \&}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classdir_aca65187d00b70dfcbeba48234dd0bb21}\label{classdir_aca65187d00b70dfcbeba48234dd0bb21}} 
+\index{dir@{dir}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfile}{file}} $\ast$ dir\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int \&}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdir_a31ddce7340d4e382d4d345bdaaea39c1}\label{classdir_a31ddce7340d4e382d4d345bdaaea39c1}} 
+\index{dir@{dir}!print\_all@{print\_all}}
+\index{print\_all@{print\_all}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{print\_all()}{print\_all()}}
+{\footnotesize\ttfamily void dir\+::print\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classdir_ad2d176373423f238e73fc169fd8b5ec9}\label{classdir_ad2d176373423f238e73fc169fd8b5ec9}} 
+\index{dir@{dir}!print\_all\_with\_2\_or\_more\_words@{print\_all\_with\_2\_or\_more\_words}}
+\index{print\_all\_with\_2\_or\_more\_words@{print\_all\_with\_2\_or\_more\_words}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{print\_all\_with\_2\_or\_more\_words()}{print\_all\_with\_2\_or\_more\_words()}}
+{\footnotesize\ttfamily void dir\+::print\+\_\+all\+\_\+with\+\_\+2\+\_\+or\+\_\+more\+\_\+words (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classdir_a4d29a40b92aad18dfdaae86e45931c12}\label{classdir_a4d29a40b92aad18dfdaae86e45931c12}} 
+\index{dir@{dir}!print\_to\_file@{print\_to\_file}}
+\index{print\_to\_file@{print\_to\_file}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{print\_to\_file()}{print\_to\_file()}}
+{\footnotesize\ttfamily void dir\+::print\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classdir_a1d52da6f2d356cd8fb45afbddbbf8516}\label{classdir_a1d52da6f2d356cd8fb45afbddbbf8516}} 
+\index{dir@{dir}!read\_from\_file@{read\_from\_file}}
+\index{read\_from\_file@{read\_from\_file}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{read\_from\_file()}{read\_from\_file()}}
+{\footnotesize\ttfamily void dir\+::read\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdir_a513acd5568d8b97eedcf24956db61036}\label{classdir_a513acd5568d8b97eedcf24956db61036}} 
+\index{dir@{dir}!sort\_files@{sort\_files}}
+\index{sort\_files@{sort\_files}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{sort\_files()}{sort\_files()}}
+{\footnotesize\ttfamily void dir\+::sort\+\_\+files (\begin{DoxyParamCaption}\item[{bool($\ast$)(\mbox{\hyperlink{classfile}{file}} \&, \mbox{\hyperlink{classfile}{file}} \&)}]{f }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Документация по друзьям класса и функциям, относящимся к классу}
+\mbox{\Hypertarget{classdir_a914283861d72010d12de0e3afa1411c4}\label{classdir_a914283861d72010d12de0e3afa1411c4}} 
+\index{dir@{dir}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{on,  }\item[{\mbox{\hyperlink{classdir}{dir}} \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{classdir_acd9e1745d4dccb01cc0c885d05572e5a}\label{classdir_acd9e1745d4dccb01cc0c885d05572e5a}} 
+\index{dir@{dir}!copy@{copy}}
+\index{copy@{copy}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{copy}{copy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfile}{file}}$\ast$$\ast$ dir\+::copy\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classdir_a378851106b448df0d35acbd1a8500352}\label{classdir_a378851106b448df0d35acbd1a8500352}} 
+\index{dir@{dir}!files@{files}}
+\index{files@{files}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfile}{file}}$\ast$$\ast$ dir\+::files\hspace{0.3cm}{\ttfamily [private]}}
+
+���� -\/ ������. \mbox{\Hypertarget{classdir_abfba2ef640d3a9f2a98594ce04a62021}\label{classdir_abfba2ef640d3a9f2a98594ce04a62021}} 
+\index{dir@{dir}!new\_ind@{new\_ind}}
+\index{new\_ind@{new\_ind}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{new\_ind}{new\_ind}}
+{\footnotesize\ttfamily int dir\+::new\+\_\+ind = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classdir_a1fa7df88b1565d43074dc1be3ae3700e}\label{classdir_a1fa7df88b1565d43074dc1be3ae3700e}} 
+\index{dir@{dir}!next\_ind@{next\_ind}}
+\index{next\_ind@{next\_ind}!dir@{dir}}
+\doxysubsubsection{\texorpdfstring{next\_ind}{next\_ind}}
+{\footnotesize\ttfamily int dir\+::next\+\_\+ind = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{dir_8h}{dir.\+h}}\item 
+\mbox{\hyperlink{dir_8cpp}{dir.\+cpp}}\end{DoxyCompactItemize}

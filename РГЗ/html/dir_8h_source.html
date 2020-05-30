@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>РГЗ: Исходный файл dir.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">РГЗ
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dir.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dir_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="file_8h.html">file.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classdir.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="classdir.html">dir</a> { </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classdir.html#a378851106b448df0d35acbd1a8500352">    6</a></span>&#160;    <a class="code" href="classfile.html">file</a>** <a class="code" href="classdir.html#a378851106b448df0d35acbd1a8500352">files</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classdir.html#acd9e1745d4dccb01cc0c885d05572e5a">    7</a></span>&#160;    <a class="code" href="classfile.html">file</a>** <a class="code" href="classdir.html#acd9e1745d4dccb01cc0c885d05572e5a">copy</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classdir.html#a1fa7df88b1565d43074dc1be3ae3700e">    8</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classdir.html#a1fa7df88b1565d43074dc1be3ae3700e">next_ind</a> = 0;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classdir.html#abfba2ef640d3a9f2a98594ce04a62021">    9</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classdir.html#abfba2ef640d3a9f2a98594ce04a62021">new_ind</a> = 1;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdir.html#a894173a727c43dee4585a665b9b7401a">add_file</a>(<span class="keyword">const</span> <a class="code" href="classexecutable__file.html">executable_file</a>&amp; f);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdir.html#a894173a727c43dee4585a665b9b7401a">add_file</a>(<span class="keyword">const</span> <a class="code" href="classnon__executable__file.html">non_executable_file</a>&amp; f);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdir.html#a9f1e6d9969e3f4935273b29995ae8d95">del_file</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; index);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdir.html#abea34978959dd24bf01d23626339225e">del_all</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdir.html#af602e371ab97b639e3a0a99610993df3">add_file_by_str</a>(<span class="keyword">const</span> std::string&amp; str);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdir.html#a1d52da6f2d356cd8fb45afbddbbf8516">read_from_file</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::string <a class="code" href="classdir.html#ab04e0aa371d91031c4add05db3234ded">get_file_to_str</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classfile.html">file</a>* <a class="code" href="classdir.html#ae183cf5360facaf8375bbf0c3a802415">get_file_by_index</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdir.html#a31ddce7340d4e382d4d345bdaaea39c1">print_all</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classdir.html#a8e20881a617ee10e36a58e7388e6c339">count_system</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdir.html#a4d29a40b92aad18dfdaae86e45931c12">print_to_file</a>(<span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classdir.html#a03dabc847142c505b51b652e78a4399d">check_str</a>(<span class="keyword">const</span> std::string&amp; str) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdir.html#ad2d176373423f238e73fc169fd8b5ec9">print_all_with_2_or_more_words</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdir.html#a513acd5568d8b97eedcf24956db61036">sort_files</a>(<span class="keywordtype">bool</span> (*f)(<a class="code" href="classfile.html">file</a>&amp;, <a class="code" href="classfile.html">file</a>&amp;));</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classfile.html">file</a>* <a class="code" href="classdir.html#aca65187d00b70dfcbeba48234dd0bb21">operator[]</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; index);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classdir.html#a914283861d72010d12de0e3afa1411c4">operator&lt;&lt;</a>(std::ostream&amp; on, <a class="code" href="classdir.html">dir</a>&amp; d);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="dir_8h.html#a2391bea6013692befe344f6384211bc6">sort_version</a>(<a class="code" href="classfile.html">file</a>&amp;, <a class="code" href="classfile.html">file</a>&amp;);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="dir_8h.html#a11555b496bb4f64e760a0fcd9ea07622">sort_size</a>(<a class="code" href="classfile.html">file</a>&amp;, <a class="code" href="classfile.html">file</a>&amp;);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="dir_8h.html#a914a3c2bc28405aa52ec93f6e60beb19">sort_ind</a>(<a class="code" href="classfile.html">file</a>&amp;, <a class="code" href="classfile.html">file</a>&amp;);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="dir_8h.html#a8022b93c322c3a6763381440fed580ca">sort_opt</a>(<a class="code" href="classfile.html">file</a>&amp;, <a class="code" href="classfile.html">file</a>&amp;);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="dir_8h.html#a65b5e3bf9f47d2dd3110bdc46726f409">sort_name</a>(<a class="code" href="classfile.html">file</a>&amp;, <a class="code" href="classfile.html">file</a>&amp;);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;std::istream&amp; <a class="code" href="dir_8h.html#a4c131bd24ee1b1350da72889a8acbed5">operator&gt;&gt;</a>(std::istream&amp; is, <a class="code" href="classdir.html">dir</a>&amp; d);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;std::ostream&amp; <a class="code" href="dir_8h.html#a90ee77e5790e5a497a68b5541ea823a2">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classdir.html">dir</a>&amp; d);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="adir_8h_html_a90ee77e5790e5a497a68b5541ea823a2"><div class="ttname"><a href="dir_8h.html#a90ee77e5790e5a497a68b5541ea823a2">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, dir &amp;d)</div><div class="ttdef"><b>Definition:</b> dir.cpp:293</div></div>
+<div class="ttc" id="aclassdir_html_aca65187d00b70dfcbeba48234dd0bb21"><div class="ttname"><a href="classdir.html#aca65187d00b70dfcbeba48234dd0bb21">dir::operator[]</a></div><div class="ttdeci">file * operator[](const int &amp;index)</div><div class="ttdef"><b>Definition:</b> dir.cpp:299</div></div>
+<div class="ttc" id="aclassdir_html_a8e20881a617ee10e36a58e7388e6c339"><div class="ttname"><a href="classdir.html#a8e20881a617ee10e36a58e7388e6c339">dir::count_system</a></div><div class="ttdeci">int count_system() const</div><div class="ttdef"><b>Definition:</b> dir.cpp:104</div></div>
+<div class="ttc" id="aclassdir_html_a4d29a40b92aad18dfdaae86e45931c12"><div class="ttname"><a href="classdir.html#a4d29a40b92aad18dfdaae86e45931c12">dir::print_to_file</a></div><div class="ttdeci">void print_to_file(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> dir.cpp:187</div></div>
+<div class="ttc" id="aclassdir_html_a03dabc847142c505b51b652e78a4399d"><div class="ttname"><a href="classdir.html#a03dabc847142c505b51b652e78a4399d">dir::check_str</a></div><div class="ttdeci">bool check_str(const std::string &amp;str) const</div><div class="ttdef"><b>Definition:</b> dir.cpp:200</div></div>
+<div class="ttc" id="aclassdir_html_a1d52da6f2d356cd8fb45afbddbbf8516"><div class="ttname"><a href="classdir.html#a1d52da6f2d356cd8fb45afbddbbf8516">dir::read_from_file</a></div><div class="ttdeci">void read_from_file(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> dir.cpp:81</div></div>
+<div class="ttc" id="aclassdir_html_ab04e0aa371d91031c4add05db3234ded"><div class="ttname"><a href="classdir.html#ab04e0aa371d91031c4add05db3234ded">dir::get_file_to_str</a></div><div class="ttdeci">std::string get_file_to_str(const int &amp;index) const</div><div class="ttdef"><b>Definition:</b> dir.cpp:94</div></div>
+<div class="ttc" id="adir_8h_html_a4c131bd24ee1b1350da72889a8acbed5"><div class="ttname"><a href="dir_8h.html#a4c131bd24ee1b1350da72889a8acbed5">operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;is, dir &amp;d)</div><div class="ttdef"><b>Definition:</b> dir.cpp:273</div></div>
+<div class="ttc" id="aclassdir_html_a914283861d72010d12de0e3afa1411c4"><div class="ttname"><a href="classdir.html#a914283861d72010d12de0e3afa1411c4">dir::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;on, dir &amp;d)</div><div class="ttdef"><b>Definition:</b> dir.cpp:293</div></div>
+<div class="ttc" id="aclassdir_html_af602e371ab97b639e3a0a99610993df3"><div class="ttname"><a href="classdir.html#af602e371ab97b639e3a0a99610993df3">dir::add_file_by_str</a></div><div class="ttdeci">void add_file_by_str(const std::string &amp;str)</div><div class="ttdef"><b>Definition:</b> dir.cpp:120</div></div>
+<div class="ttc" id="adir_8h_html_a8022b93c322c3a6763381440fed580ca"><div class="ttname"><a href="dir_8h.html#a8022b93c322c3a6763381440fed580ca">sort_opt</a></div><div class="ttdeci">bool sort_opt(file &amp;, file &amp;)</div><div class="ttdef"><b>Definition:</b> dir.cpp:256</div></div>
+<div class="ttc" id="aclassdir_html_a378851106b448df0d35acbd1a8500352"><div class="ttname"><a href="classdir.html#a378851106b448df0d35acbd1a8500352">dir::files</a></div><div class="ttdeci">file ** files</div><div class="ttdef"><b>Definition:</b> dir.h:6</div></div>
+<div class="ttc" id="aclassdir_html_abfba2ef640d3a9f2a98594ce04a62021"><div class="ttname"><a href="classdir.html#abfba2ef640d3a9f2a98594ce04a62021">dir::new_ind</a></div><div class="ttdeci">int new_ind</div><div class="ttdef"><b>Definition:</b> dir.h:9</div></div>
+<div class="ttc" id="adir_8h_html_a2391bea6013692befe344f6384211bc6"><div class="ttname"><a href="dir_8h.html#a2391bea6013692befe344f6384211bc6">sort_version</a></div><div class="ttdeci">bool sort_version(file &amp;, file &amp;)</div><div class="ttdef"><b>Definition:</b> dir.cpp:247</div></div>
+<div class="ttc" id="aclassdir_html_acd9e1745d4dccb01cc0c885d05572e5a"><div class="ttname"><a href="classdir.html#acd9e1745d4dccb01cc0c885d05572e5a">dir::copy</a></div><div class="ttdeci">file ** copy</div><div class="ttdef"><b>Definition:</b> dir.h:7</div></div>
+<div class="ttc" id="aclassdir_html"><div class="ttname"><a href="classdir.html">dir</a></div><div class="ttdef"><b>Definition:</b> dir.h:4</div></div>
+<div class="ttc" id="aclassnon__executable__file_html"><div class="ttname"><a href="classnon__executable__file.html">non_executable_file</a></div><div class="ttdef"><b>Definition:</b> file.h:71</div></div>
+<div class="ttc" id="aclassfile_html"><div class="ttname"><a href="classfile.html">file</a></div><div class="ttdef"><b>Definition:</b> file.h:26</div></div>
+<div class="ttc" id="aclassdir_html_ae183cf5360facaf8375bbf0c3a802415"><div class="ttname"><a href="classdir.html#ae183cf5360facaf8375bbf0c3a802415">dir::get_file_by_index</a></div><div class="ttdeci">file * get_file_by_index(const int &amp;index) const</div><div class="ttdef"><b>Definition:</b> dir.cpp:113</div></div>
+<div class="ttc" id="aclassdir_html_a1fa7df88b1565d43074dc1be3ae3700e"><div class="ttname"><a href="classdir.html#a1fa7df88b1565d43074dc1be3ae3700e">dir::next_ind</a></div><div class="ttdeci">int next_ind</div><div class="ttdef"><b>Definition:</b> dir.h:8</div></div>
+<div class="ttc" id="aclassdir_html_a894173a727c43dee4585a665b9b7401a"><div class="ttname"><a href="classdir.html#a894173a727c43dee4585a665b9b7401a">dir::add_file</a></div><div class="ttdeci">void add_file(const executable_file &amp;f)</div><div class="ttdef"><b>Definition:</b> dir.cpp:3</div></div>
+<div class="ttc" id="aclassdir_html_a31ddce7340d4e382d4d345bdaaea39c1"><div class="ttname"><a href="classdir.html#a31ddce7340d4e382d4d345bdaaea39c1">dir::print_all</a></div><div class="ttdeci">void print_all() const</div><div class="ttdef"><b>Definition:</b> dir.cpp:99</div></div>
+<div class="ttc" id="aclassexecutable__file_html"><div class="ttname"><a href="classexecutable__file.html">executable_file</a></div><div class="ttdef"><b>Definition:</b> file.h:56</div></div>
+<div class="ttc" id="adir_8h_html_a914a3c2bc28405aa52ec93f6e60beb19"><div class="ttname"><a href="dir_8h.html#a914a3c2bc28405aa52ec93f6e60beb19">sort_ind</a></div><div class="ttdeci">bool sort_ind(file &amp;, file &amp;)</div><div class="ttdef"><b>Definition:</b> dir.cpp:253</div></div>
+<div class="ttc" id="aclassdir_html_a9f1e6d9969e3f4935273b29995ae8d95"><div class="ttname"><a href="classdir.html#a9f1e6d9969e3f4935273b29995ae8d95">dir::del_file</a></div><div class="ttdeci">void del_file(const int &amp;index)</div><div class="ttdef"><b>Definition:</b> dir.cpp:53</div></div>
+<div class="ttc" id="aclassdir_html_ad2d176373423f238e73fc169fd8b5ec9"><div class="ttname"><a href="classdir.html#ad2d176373423f238e73fc169fd8b5ec9">dir::print_all_with_2_or_more_words</a></div><div class="ttdeci">void print_all_with_2_or_more_words() const</div><div class="ttdef"><b>Definition:</b> dir.cpp:223</div></div>
+<div class="ttc" id="afile_8h_html"><div class="ttname"><a href="file_8h.html">file.h</a></div></div>
+<div class="ttc" id="aclassdir_html_a513acd5568d8b97eedcf24956db61036"><div class="ttname"><a href="classdir.html#a513acd5568d8b97eedcf24956db61036">dir::sort_files</a></div><div class="ttdeci">void sort_files(bool(*f)(file &amp;, file &amp;))</div><div class="ttdef"><b>Definition:</b> dir.cpp:232</div></div>
+<div class="ttc" id="aclassdir_html_abea34978959dd24bf01d23626339225e"><div class="ttname"><a href="classdir.html#abea34978959dd24bf01d23626339225e">dir::del_all</a></div><div class="ttdeci">void del_all()</div><div class="ttdef"><b>Definition:</b> dir.cpp:72</div></div>
+<div class="ttc" id="adir_8h_html_a65b5e3bf9f47d2dd3110bdc46726f409"><div class="ttname"><a href="dir_8h.html#a65b5e3bf9f47d2dd3110bdc46726f409">sort_name</a></div><div class="ttdeci">bool sort_name(file &amp;, file &amp;)</div><div class="ttdef"><b>Definition:</b> dir.cpp:270</div></div>
+<div class="ttc" id="adir_8h_html_a11555b496bb4f64e760a0fcd9ea07622"><div class="ttname"><a href="dir_8h.html#a11555b496bb4f64e760a0fcd9ea07622">sort_size</a></div><div class="ttdeci">bool sort_size(file &amp;, file &amp;)</div><div class="ttdef"><b>Definition:</b> dir.cpp:250</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

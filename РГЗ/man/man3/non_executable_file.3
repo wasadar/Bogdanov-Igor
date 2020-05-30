@@ -1,0 +1,191 @@
+.TH "non_executable_file" 3 "Сб 30 Май 2020" "РГЗ" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+non_executable_file
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <file\&.h>\fP
+.PP
+Базовые классы:\fBfile\fP\&.
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBget_text\fP () const final"
+.br
+.ti -1c
+.RI "virtual void \fBchange_text\fP (const bool &) final"
+.br
+.ti -1c
+.RI "\fBnon_executable_file\fP ()"
+.br
+.ti -1c
+.RI "\fBnon_executable_file\fP (const \fBnon_executable_file\fP &)"
+.br
+.ti -1c
+.RI "\fBnon_executable_file\fP (const \fBsize_t_t\fP &, const \fBsize_t_t\fP &, const \fBsize_t_t\fP &, const bool &, const bool &, const std::string &, const bool &)"
+.br
+.ti -1c
+.RI "\fB~non_executable_file\fP ()"
+.br
+.ti -1c
+.RI "virtual std::string \fBget_info\fP () const final"
+.br
+.ti -1c
+.RI "\fBnon_executable_file\fP & \fBoperator=\fP (const \fBnon_executable_file\fP &f)"
+.br
+.ti -1c
+.RI "virtual \fBsize_t_t\fP \fBget_x\fP () const"
+.br
+.ti -1c
+.RI "virtual \fBsize_t_t\fP \fBget_size\fP () const"
+.br
+.ti -1c
+.RI "virtual \fBsize_t_t\fP \fBget_index\fP () const"
+.br
+.ti -1c
+.RI "virtual bool \fBget_sys\fP () const"
+.br
+.ti -1c
+.RI "virtual bool \fBget_hid\fP () const"
+.br
+.ti -1c
+.RI "virtual std::string \fBget_name\fP () const"
+.br
+.ti -1c
+.RI "virtual void \fBchange_x\fP (const \fBsize_t_t\fP &)"
+.br
+.ti -1c
+.RI "virtual void \fBchange_size\fP (const \fBsize_t_t\fP &)"
+.br
+.ti -1c
+.RI "virtual void \fBchange_index\fP (const \fBsize_t_t\fP &)"
+.br
+.ti -1c
+.RI "virtual void \fBchange_sys\fP (const bool &)"
+.br
+.ti -1c
+.RI "virtual void \fBchange_hid\fP (const bool &)"
+.br
+.ti -1c
+.RI "virtual void \fBchange_name\fP (const std::string &)"
+.br
+.in -1c
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "int \fBtype_of_file\fP = 0"
+.br
+.in -1c
+.SS "Защищенные данные"
+
+.in +1c
+.ti -1c
+.RI "\fBsize_t_t\fP \fBx\fP"
+.br
+.ti -1c
+.RI "\fBsize_t_t\fP \fBsize\fP"
+.br
+.ti -1c
+.RI "\fBsize_t_t\fP \fBindex\fP"
+.br
+.ti -1c
+.RI "\fBoptions\fP \fBopt\fP"
+.br
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.in -1c
+.SS "Закрытые данные"
+
+.in +1c
+.ti -1c
+.RI "bool \fBis_text\fP"
+.br
+.in -1c
+.SS "Друзья"
+
+.in +1c
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBnon_executable_file\fP &f1, const \fBnon_executable_file\fP &f2)"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBnon_executable_file\fP &f1, const \fBnon_executable_file\fP &f2)"
+.br
+.in -1c
+.SH "Конструктор(ы)"
+.PP 
+.SS "non_executable_file::non_executable_file ()"
+
+.SS "non_executable_file::non_executable_file (const \fBnon_executable_file\fP & nf)"
+
+.SS "non_executable_file::non_executable_file (const \fBsize_t_t\fP & x, const \fBsize_t_t\fP & sz, const \fBsize_t_t\fP & ind, const bool & sys, const bool & hid, const std::string & nm, const bool & text)"
+
+.SS "non_executable_file::~non_executable_file ()"
+
+.SH "Методы"
+.PP 
+.SS "void file::change_hid (const bool & hid)\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "void file::change_index (const \fBsize_t_t\fP & in)\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "void file::change_name (const std::string & nm)\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "void file::change_size (const \fBsize_t_t\fP & sz)\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "void file::change_sys (const bool & sys)\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "void non_executable_file::change_text (const bool & text)\fC [final]\fP, \fC [virtual]\fP"
+
+.SS "void file::change_x (const \fBsize_t_t\fP & new_x)\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "bool file::get_hid () const\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "\fBsize_t_t\fP file::get_index () const\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "std::string non_executable_file::get_info () const\fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Переопределяет метод предка \fBfile\fP\&.
+.SS "std::string file::get_name () const\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "\fBsize_t_t\fP file::get_size () const\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "bool file::get_sys () const\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "bool non_executable_file::get_text () const\fC [final]\fP, \fC [virtual]\fP"
+
+.SS "\fBsize_t_t\fP file::get_x () const\fC [virtual]\fP, \fC [inherited]\fP"
+
+.SS "\fBnon_executable_file\fP & non_executable_file::operator= (const \fBnon_executable_file\fP & f)"
+
+.SH "Документация по друзьям класса и функциям, относящимся к классу"
+.PP 
+.SS "bool operator!= (const \fBnon_executable_file\fP & f1, const \fBnon_executable_file\fP & f2)\fC [friend]\fP"
+
+.SS "bool operator== (const \fBnon_executable_file\fP & f1, const \fBnon_executable_file\fP & f2)\fC [friend]\fP"
+
+.SH "Данные класса"
+.PP 
+.SS "\fBsize_t_t\fP file::index\fC [protected]\fP, \fC [inherited]\fP"
+
+.SS "bool non_executable_file::is_text\fC [private]\fP"
+
+.SS "std::string file::name\fC [protected]\fP, \fC [inherited]\fP"
+
+.SS "\fBoptions\fP file::opt\fC [protected]\fP, \fC [inherited]\fP"
+
+.SS "\fBsize_t_t\fP file::size\fC [protected]\fP, \fC [inherited]\fP"
+
+.SS "int file::type_of_file = 0\fC [inherited]\fP"
+
+.SS "\fBsize_t_t\fP file::x\fC [protected]\fP, \fC [inherited]\fP"
+
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для РГЗ из исходного текста\&.
