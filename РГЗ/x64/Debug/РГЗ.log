@@ -1,0 +1,21 @@
+﻿  dir.cpp
+C:\Users\User\Bogdanov-Igor\РГЗ\dir.cpp(145,33): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Bogdanov-Igor\РГЗ\dir.cpp(201,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\dir.cpp(201,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\dir.cpp(201,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\dir.cpp(209,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\dir.cpp(209,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\dir.cpp(209,18): warning C4129: ;: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\dir.cpp(295,14): warning C4267: аргумент: преобразование из "size_t" в "const int"; возможна потеря данных
+  file.cpp
+C:\Users\User\Bogdanov-Igor\РГЗ\file.cpp(206,16): warning C4129: s: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\file.cpp(206,16): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\file.cpp(206,16): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\file.cpp(214,18): warning C4129: !: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\file.cpp(214,18): warning C4129: .: неизвестная escape-последовательность
+C:\Users\User\Bogdanov-Igor\РГЗ\file.cpp(214,18): warning C4129: ;: неизвестная escape-последовательность
+  menu.cpp
+  РГЗ.cpp
+  Создание кода...
+C:\Users\User\Bogdanov-Igor\РГЗ\dir.cpp(119): warning C4715: dir::get_file_by_index: значение возвращается не при всех путях выполнения
+  РГЗ.vcxproj -> C:\Users\User\Bogdanov-Igor\x64\Debug\РГЗ.exe
